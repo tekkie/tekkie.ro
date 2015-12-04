@@ -1,0 +1,19 @@
+# The contents of this file are parsed and made available as
+# via `site.*`. So for example, {{ site.title }} can be used
+# in a template to get the contents of the `title` key.
+title: Tekkie Consulting
+subtitle: Think. Discover. Design. Develop.
+email: office+website@tekkie.ro
+
+author:
+  name: Georgiana Gligor
+  bio: Georgiana Gligor is an application architect that enjoys crafting efficient large-scale solutions. She has been using PHP for more than a decade, and is a living proof that geek girls are an asset to any team. She loves taming the Force of the DevOps dark side and mentoring team mates in achieving craftsmanship.
+
+# Insert your disqus shortname
+# disqus:
+#    shortname: @georgianagligor
+
+main_menu_links:
+  - { title: About, href: /about/ }
+  - { title: Contact, href: /contact/ }
+  - { title: Resources, href: /resources/ }
