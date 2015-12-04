@@ -2,7 +2,7 @@
 title: How to make video tutorials in Ubuntu 8.10 Intrepid
 author: Georgiana
 layout: post
-permalink: /quick-n-dirty/how-to-make-video-tutorials-in-ubuntu-810-intrepid/
+permalink: blog/quick-n-dirty/how-to-make-video-tutorials-in-ubuntu-810-intrepid/
 ratings_users:
   - 0
 ratings_score:

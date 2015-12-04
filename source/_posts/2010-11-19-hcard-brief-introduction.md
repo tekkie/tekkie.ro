@@ -2,7 +2,7 @@
 title: hCard brief introduction
 author: Georgiana
 layout: post
-permalink: /resources/hcard-brief-introduction/
+permalink: blog/resources/hcard-brief-introduction/
 ratings_users:
   - 0
 ratings_score:
@@ -24,19 +24,19 @@ Below you can find a brief list to get you started.
   * [reading start point][1], have a look at [some][2] [examples][3], or simply [generate yours][4]
   * for more advanced information, refer to the [semanticweb.org][5]
   * [validate it][6]
-  * place a link to 
+  * place a link to
     <pre>http://h2vx.com/vcf/your.website.com/contact-page/</pre>
-    
+
     or to
-    
+
     <pre>http://feeds.technorati.com/contacts/http://your.website.com/contact-page/</pre>
-    
+
     , replacing
-    
+
     <pre>your.website.com/contact-page/</pre>
-    
-    with your correct online URL</li> 
-    
+
+    with your correct online URL</li>
+
       * discover hCards in the web pages you crawl with the [Semantic Radar][7] or  [Tails Export][8] add-ons for Firefox</ul>
 
  [1]: http://microformats.org/wiki/hcard "hCard starting point on microformats.org"

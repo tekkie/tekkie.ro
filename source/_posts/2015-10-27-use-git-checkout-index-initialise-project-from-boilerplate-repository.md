@@ -1,9 +1,9 @@
 ---
 title: Using git checkout-index to init project from boilerplate repository
 author: Georgiana
-excerpt: Use git checkout-index intelligently to bootstrap a project right.
+excerpt: As developers, we are always looking for inspiration in other people’s code. Either we learn something totally unfamiliar to us, or we are just in for a trick, but what makes us better developers is the social aspect of coding. How do we start a project from a boilerplate repository using just git commands?
 layout: post
-permalink: /methodology/use-git-checkout-index-initialise-project-from-boilerplate-repository/
+permalink: blog/methodology/use-git-checkout-index-initialise-project-from-boilerplate-repository/
 categories:
   - Methodology
 tags:
@@ -20,29 +20,41 @@ Find your favorite [boilerplate repository on github][1]. For this example, I am
 
 So the first step would be to clone it. Business as usual.
 
-<pre>$ git clone git@github.com:numerogeek/ultimate-symfony2-boilerplate.git</pre>
+```bash
+$ git clone git@github.com:numerogeek/ultimate-symfony2-boilerplate.git
+```
 
 Old school folks would recursively remove `.git` folders at this point. But not us. Let&#8217;s see what git awesomeness there is in our sleeve:
 
-<pre>$ git checkout-index -f -a --prefix=/work/webdev/kickstart/</pre>
+```bash
+$ git checkout-index -f -a --prefix=/work/webdev/kickstart/
+```
 
 This will create the `/work/webdev/kickstart/` folder and copy all the files there, without the `.git` items.
 
 Now we can safely navigate to our destination folder
 
-<pre>$ cd /work/webdev/kickstart/</pre>
+```bash
+$ cd /work/webdev/kickstart/
+```
 
 and continue with
 
-<pre>$ git init</pre>
+```bash
+$ git init
+```
 
 and then add everything to the repo
 
-<pre>$ git add .</pre>
+```bash
+$ git add .
+```
 
 then just
 
-<pre>$ git commit -m "initial setup</pre>
+```bash
+$ git commit -m "initial setup
+```
 
 We&#8217;re ready to go, and not starting from scratch!
 

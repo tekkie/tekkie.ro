@@ -3,7 +3,7 @@ title: Easy upgrade the node.js version using n
 author: Georgiana
 excerpt: Easy upgrade the node.js version using n
 layout: post
-permalink: /computer-setup/easy-upgrade-the-node-js-version-using-n/
+permalink: blog/computer-setup/easy-upgrade-the-node-js-version-using-n/
 categories:
   - Computer setup
 tags:
@@ -40,12 +40,12 @@ n@2.0.1 /usr/local/lib/node_modules/n`
 I then asked `n` to install the latest stable node version.
 
     $ sudo n stable
-    
+
       install : node-v0.12.7
         mkdir : /usr/local/n/versions/node/0.12.7
         fetch : https://nodejs.org/dist/v0.12.7/node-v0.12.7-darwin-x64.tar.gz
     installed : v0.12.7
-    
+
 
 This also made the switch to the installed version.
 

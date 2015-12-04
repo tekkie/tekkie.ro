@@ -3,7 +3,7 @@ title: List all globally installed npm modules
 author: Georgiana
 excerpt: List all globally installed npm modules
 layout: post
-permalink: /computer-setup/list-all-globally-installed-npm-modules/
+permalink: blog/computer-setup/list-all-globally-installed-npm-modules/
 categories:
   - Computer setup
 tags:
@@ -13,7 +13,7 @@ tags:
 Today I needed to have a look at all the `npm` modules that were installed globally on my machine. I found that `npm` has a `list` command that does just that. But, in order to only see the modules, and not all their dependencies, I needed to specify a `depth` value of 0:
 
     npm list -g --depth=0
-    
+
     /usr/local/lib
     ├── ampersand@3.0.5
     ├── bower@1.4.1
@@ -30,14 +30,14 @@ Today I needed to have a look at all the `npm` modules that were installed globa
     ├── react-native-cli@0.1.4
     ├── react-tools@0.13.3
     ├── supervisor@0.7.1
-    
+
 
 The `-g` switch is the same one that I used when globally installing each module.
 
 If the name of some package doesn&#8217;t immediately ring a bell, replacing `list` with `ll` can help:
 
     npm ll -g --depth=0
-    
+
     │ /usr/local/lib
     │
     ├── ampersand@3.0.5

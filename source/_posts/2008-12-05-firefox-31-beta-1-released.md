@@ -2,7 +2,7 @@
 title: Firefox 3.1 beta 1 released
 author: Georgiana
 layout: post
-permalink: /news/firefox-31-beta-1-released/
+permalink: blog/news/firefox-31-beta-1-released/
 ratings_users:
   - 0
 ratings_score:

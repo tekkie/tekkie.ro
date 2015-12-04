@@ -2,7 +2,7 @@
 title: Install Xdebug on Mac OSX Lion
 author: Georgiana
 layout: post
-permalink: /computer-setup/install-xdebug-mac-osx-lion/
+permalink: blog/computer-setup/install-xdebug-mac-osx-lion/
 ratings_users:
   - 0
 ratings_score:
@@ -18,16 +18,16 @@ tags:
   - PHP
   - xdebug
 ---
-  * Download the latest Xdebug version. The most stable is currently 2.1.3, but if you&#8217;re brave you&#8217;ll use 
+  * Download the latest Xdebug version. The most stable is currently 2.1.3, but if you&#8217;re brave you&#8217;ll use
     <pre>xdebug-latest.tgz</pre>
-    
+
     directly.  
     `<br />
 cd /tmp/ && curl http://xdebug.org/files/xdebug-2.1.3.tgz > xdebug.tgz<br />
 tar -xvzf xdebug.tgz<br />
 cd xdebug-2.1.3<br />
-`</li> 
-    
+`</li>
+
       * configure it with phpize  
         `phpize`
       * specify some mac-specific environment variables  

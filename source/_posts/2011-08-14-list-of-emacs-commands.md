@@ -2,7 +2,7 @@
 title: List of Emacs Commands
 author: Georgiana
 layout: post
-permalink: /resources/list-of-emacs-commands/
+permalink: blog/resources/list-of-emacs-commands/
 ratings_users:
   - 0
 ratings_score:

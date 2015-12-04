@@ -2,7 +2,7 @@
 title: Easiest way to get Skype on Fedora 11
 author: Georgiana
 layout: post
-permalink: /computer-setup/easiest-way-to-get-skype-on-fedora-11/
+permalink: blog/computer-setup/easiest-way-to-get-skype-on-fedora-11/
 ratings_users:
   - 0
 ratings_score:
@@ -19,11 +19,11 @@ tags:
 I investigated today about an hour, and none of the solutions worked. Until I found this one, quick and easy setup. Thanks, [guys][1].
 
 > [&#8230;] install the Skype repository. Open a terminal and type:
-> 
+>
 > [sourcecode language=&#8217;html&#8217;]  
 > su -c &#8216;gedit /etc/yum.repos.d/skype.repo&#8217;  
 > [/sourcecode]
-> 
+>
 > In that file copy the following lines:  
 > [sourcecode language=&#8217;html&#8217;]  
 > [skype]  
@@ -33,7 +33,7 @@ I investigated today about an hour, and none of the solutions worked. Until I fo
 > gpgkey=http://www.skype.com/products/skype/linux/rpm-public-key.asc  
 > gpgcheck=0  
 > [/sourcecode]
-> 
+>
 > Now you can easily install/update skype by typing:  
 > [sourcecode language=&#8217;html&#8217;]  
 > su -c &#8216;yum install skype&#8217;  

@@ -2,7 +2,7 @@
 title: Howto get PHPStorm display line numbers by default
 author: Georgiana
 layout: post
-permalink: /quick-n-dirty/howto-get-phpstorm-display-line-numbers-by-default/
+permalink: blog/quick-n-dirty/howto-get-phpstorm-display-line-numbers-by-default/
 ratings_users:
   - 0
 ratings_score:

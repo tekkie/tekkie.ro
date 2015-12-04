@@ -3,7 +3,7 @@ title: Object Oriented fun
 author: Georgiana
 excerpt: Object Oriented joke for tekkies
 layout: post
-permalink: /funny/object-oriented-fun/
+permalink: blog/funny/object-oriented-fun/
 ratings_users:
   - 0
 ratings_score:

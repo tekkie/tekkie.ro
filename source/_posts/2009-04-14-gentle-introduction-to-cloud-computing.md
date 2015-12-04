@@ -2,7 +2,7 @@
 title: Gentle introduction to cloud computing
 author: Georgiana
 layout: post
-permalink: /web-specifics/gentle-introduction-to-cloud-computing/
+permalink: blog/web-specifics/gentle-introduction-to-cloud-computing/
 ratings_users:
   - 0
 ratings_score:

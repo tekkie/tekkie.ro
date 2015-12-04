@@ -3,7 +3,7 @@ title: Use Google Sheet as a free online database for prototyping
 author: Georgiana
 excerpt: Developer notes showing how to get started with Google Sheet as a free online database for prototyping
 layout: post
-permalink: /quick-n-dirty/use-google-sheet-as-a-free-online-database-for-prototyping/
+permalink: blog/quick-n-dirty/use-google-sheet-as-a-free-online-database-for-prototyping/
 categories:
   - Quick and dirty
 tags:

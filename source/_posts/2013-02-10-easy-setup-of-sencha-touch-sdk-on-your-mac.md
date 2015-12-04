@@ -3,7 +3,7 @@ title: Easy Setup of Sencha Touch SDK on Your Mac
 author: Georgiana
 excerpt: Detailed instructions on how to setup the sencha touch SDK on an OSX-based development machine.
 layout: post
-permalink: /mobile-development/easy-setup-of-sencha-touch-sdk-on-your-mac/
+permalink: blog/mobile-development/easy-setup-of-sencha-touch-sdk-on-your-mac/
 ratings_users:
   - 0
 ratings_score:

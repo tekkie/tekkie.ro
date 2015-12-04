@@ -2,7 +2,7 @@
 title: Nice error page from geeks for geeks
 author: Georgiana
 layout: post
-permalink: /web-specifics/nice-error-page-from-geeks-for-geeks/
+permalink: blog/web-specifics/nice-error-page-from-geeks-for-geeks/
 ratings_users:
   - 0
 ratings_score:

@@ -2,7 +2,7 @@
 title: Download Curl library for CodeIgniter, ported to Kohana
 author: Georgiana
 layout: post
-permalink: /software/download-curl-library-for-codeigniter-ported-to-kohana/
+permalink: blog/software/download-curl-library-for-codeigniter-ported-to-kohana/
 ratings_users:
   - 0
 ratings_score:

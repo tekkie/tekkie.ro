@@ -2,7 +2,7 @@
 title: WordPress for iPhone
 author: Georgiana
 layout: post
-permalink: /news/wordpress-for-iphone/
+permalink: blog/news/wordpress-for-iphone/
 ratings_users:
   - 0
 ratings_score:

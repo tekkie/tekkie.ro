@@ -2,7 +2,7 @@
 title: Best way to learn is to look at the best
 author: Georgiana
 layout: post
-permalink: /funny/best-way-to-learn-is-to-look-at-the-best/
+permalink: blog/funny/best-way-to-learn-is-to-look-at-the-best/
 categories:
   - Funny
 tags:

@@ -2,7 +2,7 @@
 title: Form submit from JavaScript
 author: Georgiana
 layout: post
-permalink: /news/form-submit-from-javascript/
+permalink: blog/news/form-submit-from-javascript/
 ratings_users:
   - 0
 ratings_score:
@@ -42,7 +42,7 @@ don&#8217;t despair, just:
   * change the name of the button to something else, like:  
     [sourcecode language=&#8217;html&#8217;]  
     <input id="mySubmitButton" name="mySubmitButton" value="Send to developer" type="submit" />  
-    [/sourcecode] 
+    [/sourcecode]
 
 That&#8217;s all!
 

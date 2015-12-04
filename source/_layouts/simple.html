@@ -56,7 +56,6 @@
                             <ul class="nav">
                                 <li><a href="{{ site.url }}/blog">Blog</a></li>
                                 <li><a href="{{ site.url }}/blog/categories">Categories</a></li>
-                                <li><a href="{{ site.url }}/blog/tags">Tags</a></li>
                                 <li><a href="{{ site.url }}/about">About</a></li>
                             </ul>
                         </div><!--/.nav-collapse -->
@@ -66,26 +65,7 @@
         </header>
         <div class="mainContent container">
             <div class="row-fluid">
-                <div class="span8">
                     {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
-                </div>
-                <div class="span4 sidebar">
-<!--
-                    <div class="well">
-                      <h4>{{ site.title }}{% if site.subtitle %} <small>{{ site.subtitle }}</small>{% endif %}</h4>
-                    </div>
--->
-                    {% if data.posts_categories %}
-                    <div class="well sidebar-nav">
-                      <h4>Categories</h4>
-                      <ul>
-                      {% for category,posts in data.posts_categories %}
-                      <li><a href="{{ site.url }}/blog/categories/{{ category|url_encode(true) }}">{{ category }}</a></li>
-                      {% endfor %}
-                      </ul>
-                    </div>
-                    {% endif %}
-                </div>
             </div>
         </div>
         <footer class="container">

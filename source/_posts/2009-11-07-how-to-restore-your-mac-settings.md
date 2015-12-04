@@ -2,7 +2,7 @@
 title: How to restore your Mac settings
 author: Georgiana
 layout: post
-permalink: /quick-n-dirty/how-to-restore-your-mac-settings/
+permalink: blog/quick-n-dirty/how-to-restore-your-mac-settings/
 ratings_users:
   - 0
 ratings_score:

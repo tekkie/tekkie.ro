@@ -2,7 +2,7 @@
 title: How to add and use Compiz in your Ubuntu 8.10 Intrepid 64-bit
 author: Georgiana
 layout: post
-permalink: /computer-setup/how-to-add-and-use-compiz-in-your-ubuntu-intrepid-64-bit/
+permalink: blog/computer-setup/how-to-add-and-use-compiz-in-your-ubuntu-intrepid-64-bit/
 ratings_users:
   - 0
 ratings_score:
@@ -21,7 +21,7 @@ So, you are using Ubuntu 8.10 (codenamed Intrepid Ibex) and you&#8217;d like to 
 
 <!--more-->
 
-  
+
 Do you have a 3D-capable graphics card? If you don&#8217;t, it&#8217;s time to go get one now, because otherwise you won&#8217;t be able to play with Compiz.
 
 ## Graphics card drivers should be in place

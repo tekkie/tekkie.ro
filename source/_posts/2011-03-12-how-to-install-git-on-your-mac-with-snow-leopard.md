@@ -2,7 +2,7 @@
 title: How to install git on your Mac with Snow Leopard
 author: Georgiana
 layout: post
-permalink: /computer-setup/how-to-install-git-on-your-mac-with-snow-leopard/
+permalink: blog/computer-setup/how-to-install-git-on-your-mac-with-snow-leopard/
 ratings_users:
   - 0
 ratings_score:
@@ -23,11 +23,11 @@ categories:
       run the installer package:
     </li>
   </ul>
-  
+
   <p>
     <a href="http://i2.wp.com/www.tekkie.ro/wp-content/uploads/2011/03/run-installer-git-osx.png"><img class="alignnone size-medium wp-image-276" title="run installer git osx" src="http://i0.wp.com/www.tekkie.ro/wp-content/uploads/2011/03/run-installer-git-osx-300x157.png?fit=300%2C157" alt="run installer git osx" data-recalc-dims="1" /></a>
   </p>
-  
+
   <ul>
     <li>
       perform all necessary steps
@@ -36,11 +36,11 @@ categories:
       create user shortcut
     </li>
   </ul>
-  
+
   <p>
     <a href="http://i0.wp.com/www.tekkie.ro/wp-content/uploads/2011/03/git-osx-create-shortcut.png"><img class="alignnone size-medium wp-image-277" title="git osx create shortcut" src="http://i2.wp.com/www.tekkie.ro/wp-content/uploads/2011/03/git-osx-create-shortcut-300x14.png?fit=300%2C14" alt="git osx create shortcut" data-recalc-dims="1" /></a>
   </p>
-  
+
   <ul>
     <li>
       verify that it&#8217;s all working

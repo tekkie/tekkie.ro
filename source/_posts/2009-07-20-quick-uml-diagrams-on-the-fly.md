@@ -2,7 +2,7 @@
 title: Quick UML diagrams, on the fly
 author: Georgiana
 layout: post
-permalink: /quick-n-dirty/quick-uml-diagrams-on-the-fly/
+permalink: blog/quick-n-dirty/quick-uml-diagrams-on-the-fly/
 ratings_users:
   - 0
 ratings_score:

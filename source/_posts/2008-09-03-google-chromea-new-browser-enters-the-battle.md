@@ -2,7 +2,7 @@
 title: 'Google Chrome: A new browser enters the battle'
 author: Georgiana
 layout: post
-permalink: /news/google-chromea-new-browser-enters-the-battle/
+permalink: blog/news/google-chromea-new-browser-enters-the-battle/
 ratings_users:
   - 0
 ratings_score:

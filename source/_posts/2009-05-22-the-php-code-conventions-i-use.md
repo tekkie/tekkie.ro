@@ -2,7 +2,7 @@
 title: The PHP code conventions I use
 author: Georgiana
 layout: post
-permalink: /resources/the-php-code-conventions-i-use/
+permalink: blog/resources/the-php-code-conventions-i-use/
 ratings_users:
   - 0
 ratings_score:
@@ -15,7 +15,8 @@ tags:
   - code conventions
   - PHP
 ---
-[sourcecode language=&#8217;php&#8217;]
+
+```php
 
 <?php
 // Did you notice the full-style opening PHP tags?
@@ -70,9 +71,9 @@ $sSum = $iNumber2 . ' Here we add a number '; // space dot space quote before a 
 
 /**
  * bool hasPrices (obj oProduct [, bool bAlwaysTrue])
- * 
+ *
  * @param Product the product we chack for prices
- * @param boolean 
+ * @param boolean
  * @return true if the Product has prices, false otherwise
 */
 
@@ -80,7 +81,7 @@ function hasPrices( $oProduct, $bAlwaysTrue = false ) {
     if ($bAlwaysTrue) return true;
     foreach ($oProduct->aProperties as $sProperty ) {
 
-  
+
 if( &#8216;price&#8217; === $sProperty ) { // use === as often as possible; put the string first for speed reasons  
 return( true );  
 } // .. if  
@@ -94,7 +95,7 @@ return( false );
 
 define (CR, &#8220;\n&#8221;);
 
-echo 
+echo
 
 CR, &#8216;Line1  
 &#8216;,
@@ -123,4 +124,4 @@ $sText =
 ;
 
 ?>  
-[/sourcecode]
+```

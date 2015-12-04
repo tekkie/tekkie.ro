@@ -2,7 +2,7 @@
 title: 'mySQL: find out distinct values of a column and the number of their occurrences'
 author: Georgiana
 layout: post
-permalink: /software/mysql-find-out-distinct-values-column-number-their-occurrences/
+permalink: blog/software/mysql-find-out-distinct-values-column-number-their-occurrences/
 ratings_users:
   - 0
 ratings_score:

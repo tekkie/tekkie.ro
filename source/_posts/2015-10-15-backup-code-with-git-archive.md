@@ -2,7 +2,7 @@
 title: Backup code with git archive
 author: Georgiana
 layout: post
-permalink: /processes/backup-code-with-git-archive/
+permalink: blog/processes/backup-code-with-git-archive/
 categories:
   - Processes
 tags:

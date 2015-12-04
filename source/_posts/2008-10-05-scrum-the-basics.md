@@ -2,7 +2,7 @@
 title: Scrum, the basics
 author: Georgiana
 layout: post
-permalink: /methodology/scrum-the-basics/
+permalink: blog/methodology/scrum-the-basics/
 ratings_users:
   - 0
 ratings_score:

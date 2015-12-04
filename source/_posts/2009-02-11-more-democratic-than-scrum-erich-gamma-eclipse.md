@@ -2,7 +2,7 @@
 title: 'More democratic than Scrum &#8211; Erich Gamma on Eclipse'
 author: Georgiana
 layout: post
-permalink: /methodology/more-democratic-than-scrum-erich-gamma-eclipse/
+permalink: blog/methodology/more-democratic-than-scrum-erich-gamma-eclipse/
 ratings_users:
   - 0
 ratings_score:

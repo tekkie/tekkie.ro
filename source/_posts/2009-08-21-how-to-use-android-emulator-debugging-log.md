@@ -2,7 +2,7 @@
 title: How to use Android emulator debugging log
 author: Georgiana
 layout: post
-permalink: /quick-n-dirty/how-to-use-android-emulator-debugging-log/
+permalink: blog/quick-n-dirty/how-to-use-android-emulator-debugging-log/
 ratings_users:
   - 0
 ratings_score:

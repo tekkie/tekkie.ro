@@ -2,7 +2,7 @@
 title: Screw professional designers, just make your logo bigger
 author: Georgiana
 layout: post
-permalink: /funny/screw-professional-designers-just-make-your-logo-bigger/
+permalink: blog/funny/screw-professional-designers-just-make-your-logo-bigger/
 ratings_users:
   - 0
 ratings_score:

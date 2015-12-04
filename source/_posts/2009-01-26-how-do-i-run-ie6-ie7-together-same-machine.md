@@ -3,7 +3,7 @@ title: How do I run IE6 and IE7 (even IE8) together on the same machine?
 author: Georgiana
 excerpt: There are explained several options one has when trying to run IE6 and IE7 on the same machine.
 layout: post
-permalink: /software/how-do-i-run-ie6-ie7-together-same-machine/
+permalink: blog/software/how-do-i-run-ie6-ie7-together-same-machine/
 ratings_users:
   - 0
 ratings_score:
@@ -23,15 +23,15 @@ This is a very common issue among us, developers or testers of web applications,
 
 After trying the various solutions on the internet, I learnt that the simple is the best.
 
-  1. <span style="text-decoration: underline;">IE6 standalone install</span> (best choice) 
+  1. <span style="text-decoration: underline;">IE6 standalone install</span> (best choice)
       * download the [IE6 standalone kit][1] from evolt.org
       * unpack the archive in a convenient place on your computer; be careful to keep all the files into the same directory
       * create a shortcut to iexplore.exe either on the desktop or in the QuickLaunch bar
       * Congratulations, you&#8217;re done!
       * please note that until IE8 is a stable release and gains a small market share I am not interested in testing web apps for it, so this is the reason I chose this solution to be the best one for me
-  2. <span style="text-decoration: underline;">Use Internet Explorer Collection</span> 
+  2. <span style="text-decoration: underline;">Use Internet Explorer Collection</span>
       * download the [IE Collection kit][2] (note: at the time of this writing, the IE Collection has 42.4 MB, and has reached 1.1.0.1);
-      * this package contains various versions of IE: 
+      * this package contains various versions of IE:
           * Internet Explorer 8.0 (8.0.6001.18241)
           * Internet Explorer 7.0 (7.0.5730.13)
           * Internet Explorer 6.0 (6.00.2800.1106)
@@ -45,13 +45,13 @@ After trying the various solutions on the internet, I learnt that the simple is 
       * choose the version of IE you want to install
       * All set up!
       * please note that this solution does not work with Microsoft Vista
-  3. <span style="text-decoration: underline;">Use IETester</span> 
+  3. <span style="text-decoration: underline;">Use IETester</span>
       * download the [IETester kit][3] from the [My DebugBar page][4] (note: at the time of this writing the kit has reached version 0.2.3 and has 24 MB)
       * please note that you need to have Windows Vista or Windows XP with IE7 installed if you choose this solution (ithese 2 are the configurations known to work)
       * install it and you&#8217;re ready to go!
     <div>
     </div>
-    
+
     <div>
       Happy coding / testing!
     </div>

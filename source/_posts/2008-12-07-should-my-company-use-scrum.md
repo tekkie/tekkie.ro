@@ -2,7 +2,7 @@
 title: Should my company use Scrum?
 author: Georgiana
 layout: post
-permalink: /methodology/should-my-company-use-scrum/
+permalink: blog/methodology/should-my-company-use-scrum/
 ratings_users:
   - 0
 ratings_score:

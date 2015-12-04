@@ -2,7 +2,7 @@
 title: Review of the digital advertising ecosystem
 author: Georgiana
 layout: post
-permalink: /news/review-of-the-digital-advertising-ecosystem/
+permalink: blog/news/review-of-the-digital-advertising-ecosystem/
 ratings_users:
   - 0
 ratings_score:

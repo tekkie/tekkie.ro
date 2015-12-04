@@ -3,7 +3,7 @@ title: Create PDF files from Markdown sources in OSX
 author: Georgiana
 excerpt: For technical people, writing is easier in markdown. To pass the results around to other people, less technical, a markdown source file and a bunch of images is not the best approach, so converting it to a more robust format like PDF seems like a much better choice. The present article details how to easily assemble a solution for this using Pandoc and Mactex.
 layout: post
-permalink: /blogging/create-pdf-files-from-markdown-sources-in-osx/
+permalink: blog/blogging/create-pdf-files-from-markdown-sources-in-osx/
 categories:
   - Blogging
   - Mac OSX

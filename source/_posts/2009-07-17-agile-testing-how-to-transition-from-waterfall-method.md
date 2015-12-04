@@ -2,7 +2,7 @@
 title: Agile testing, how to transition from waterfall method
 author: Georgiana
 layout: post
-permalink: /methodology/agile-testing-how-to-transition-from-waterfall-method/
+permalink: blog/methodology/agile-testing-how-to-transition-from-waterfall-method/
 ratings_users:
   - 0
 ratings_score:

@@ -2,7 +2,7 @@
 title: Premature Optimization with Ilia Alshanetsky @ Dutch PHP Conference | Notes
 author: Georgiana
 layout: post
-permalink: /news/premature-optimization-with-ilia-alshanetsky-dutch-php-conference-notes/
+permalink: blog/news/premature-optimization-with-ilia-alshanetsky-dutch-php-conference-notes/
 ratings_users:
   - 0
 ratings_score:
@@ -53,7 +53,7 @@ categories:
 -> output buffering  
 &#8212;> Apache&#8217;s SendBufferSize should be the same as PageSize  
 &#8212;> tcp_wmem | affects everything on tcp-ip  
-&#8212;> tcp_mem | 
+&#8212;> tcp_mem |
 
 -> use profiling to understand the real bottleneck in the code, without the &#8220;educated assumptions&#8221;  
 &#8212;> Xdebug & XHProf [last one comes from Facebook]  

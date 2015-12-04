@@ -3,7 +3,7 @@ title: 'Notes on PSR-7&#8217;s Message Interfaces'
 author: Georgiana
 excerpt: 'The PHP world is currently in the middle of a revolution. As someone working with PHP for more than a decade, I could feel the earthquake that Composer brought to the community. And these days there is an even bigger one happening: the PSR-7.'
 layout: post
-permalink: /news/notes-on-psr-7s-message-interfaces/
+permalink: blog/news/notes-on-psr-7s-message-interfaces/
 categories:
   - News
 tags:

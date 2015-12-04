@@ -2,7 +2,7 @@
 title: All-in-one SEO pack în română
 author: Georgiana
 layout: post
-permalink: /blogging/all-in-one-seo-pack-in-romana/
+permalink: blog/blogging/all-in-one-seo-pack-in-romana/
 categories:
   - Blogging
 tags:

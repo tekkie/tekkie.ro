@@ -2,7 +2,7 @@
 title: OSX list USB devices (lsusb equivalent)
 author: Georgiana
 layout: post
-permalink: /mobile-development/osx-list-usb-devices-lsusb-equivalent/
+permalink: blog/mobile-development/osx-list-usb-devices-lsusb-equivalent/
 ratings_users:
   - 0
 ratings_score:

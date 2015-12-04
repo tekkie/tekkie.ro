@@ -2,7 +2,7 @@
 title: Ubuntu 9.04 (codenamed Jaunty Jackalope) announced
 author: Georgiana
 layout: post
-permalink: /news/ubuntu-904-codename-jaunty-jackalope-announced/
+permalink: blog/news/ubuntu-904-codename-jaunty-jackalope-announced/
 ratings_users:
   - 0
 ratings_score:

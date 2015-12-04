@@ -2,7 +2,7 @@
 title: How to install kcachegrind / qcachegrind on Mac OSX
 author: Georgiana
 layout: post
-permalink: /computer-setup/how-to-install-kcachegrind-qcachegrind-on-mac-osx/
+permalink: blog/computer-setup/how-to-install-kcachegrind-qcachegrind-on-mac-osx/
 ratings_users:
   - 0
 ratings_score:
