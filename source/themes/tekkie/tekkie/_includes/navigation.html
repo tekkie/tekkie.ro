@@ -17,7 +17,8 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li{% if page.layout == 'post' or page.menu_active == 'blog' %} class="active"{% endif %}><a href="{{ site.url }}/blog">Blog</a></li>
                         <li{% if page.menu_active == 'services' %} class="active"{% endif %}><a href="{{ site.url }}/services">Services</a></li>
-                        <li><a href="{{ site.url }}/about">About</a></li>
+                        <li{% if page.menu_active == 'about' %} class="active"{% endif %}><a href="{{ site.url }}/about">About</a></li>
+                        <li{% if page.menu_active == 'contact' %} class="active"{% endif %}><a href="{{ site.url }}/contact">Contact</a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>

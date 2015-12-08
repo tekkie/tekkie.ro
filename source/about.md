@@ -1,6 +1,7 @@
 ---
 title: About
 author: Georgiana
+menu_active: about
 layout: page
 ---
 My name is Georgiana Gligor, and I am crafting professional software since 2003. I am a geek, a mother, and a do-er. I am in the software business because I want to make our lives better, simpler, more efficient.

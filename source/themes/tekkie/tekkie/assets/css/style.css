@@ -155,3 +155,15 @@ h3.panel-title {
 .tk-services ul.pager li>a:hover, .tk-services ul.pager li>a:focus {
   background-color: #30384B;
 }
+
+.tel dt, .email dt {
+  display: inline;
+}
+
+.tel dd, .email dd {
+  margin-left: 2em;
+}
+
+.tel>span.glyphicon {
+  margin-right: 1em;
+}
