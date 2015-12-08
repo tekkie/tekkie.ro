@@ -36,6 +36,27 @@ footer.container {
   background: #30384B;
 }
 
+/*@media (min-width: 768px) {
+  .navbar-nav>li>a {
+    margin: 0 .5em;
+    padding: .5em;
+  }
+}*/
+
+.navbar-inverse.navbar-tkc .navbar-nav>li>a {
+  border-top: 5px solid #30384B;
+}
+
+.navbar-inverse.navbar-tkc .navbar-nav>.active>a {
+  background-color: inherit;
+  border-top: 5px solid #CC3514;
+  color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+  color: #CC3514;
+}
+
 .navbar .brand {
   margin: 1px;
   padding: 0px;
@@ -54,6 +75,10 @@ footer.container {
   }
 }
 
+.navbar .navbar-brand {
+  height: inherit;
+}
+
 /* screen size needs more love */
 @media (min-width: 979px) {
 
@@ -63,7 +88,7 @@ footer.container {
 
   .navbar .nav {
     float: right;
-    margin: 2em;
+    margin: 0 1em .5em 1em;
   }
 }
 
