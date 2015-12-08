@@ -38,7 +38,7 @@ use:
 
   <nav>
     <ul class="pager">
-      <li><a href="{{ site.url }}/services" role="button">Check our services <span aria-hidden="true">&rarr;</span></a></li>
+      <li class="next"><a href="{{ site.url }}/services" role="button" class="btn btn-primary btn-lg">Check our services <span aria-hidden="true">&rarr;</span></a></li>
     </ul>
   </nav>
 </div>
@@ -47,25 +47,27 @@ use:
 <div class="container blog-posts">
   <h2>From the blog</h2>
 {% for post in page.pagination.items %}
-  <div class="panel panel-default span4">
+{% set postTitle = post.title[0:60] %}
+{% if postTitle|length < post.title|length %}{% set postTitle = postTitle ~ "..." %}{% endif %}
+  <div class="panel span4">
     <div class="panel-heading">
-      <h3 class="panel-title"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+      <h3 class="panel-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ postTitle }}</a></h3>
     </div>
+    {% if post.meta.tags %}
     <div class="panel-body">
+        <span class="glyphicon glyphicon-tags" aria-hidden="true"></span>
+        <ul class="tags nav nav-pills">
+        {% for tag in post.meta.tags %}
+        <li role="presentation"><a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}" class="btn-xs">{{ tag }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="panel-footer">
       {% if post.excerpt %}
         {{ post.excerpt }}
       {% else %}
         {{ post.blocks.content|raw }}
       {% endif %}
-    </div>
-    {% if post.meta.tags %}
-    <div class="panel-footer">
-        <span class="glyphicon glyphicon-tags" aria-hidden="true"></span>
-        <ul class="tags nav nav-pills">
-        {% for tag in post.meta.tags %}
-        <li role="presentation"><a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a></li>
-        {% endfor %}
-      </ul>
     </div>
     {% endif %}
   </div>

@@ -33,7 +33,6 @@ footer.container {
 }
 
 .navbar-inverse.navbar-tkc .navbar-inner {
-  /*min-height: 100px;*/
   background: #30384B;
 }
 
@@ -42,8 +41,17 @@ footer.container {
   padding: 0px;
 }
 
-.navbar-brand img {
+.navbar-brand>img {
   height: 50px;
+  display: inline;
+}
+
+@media (max-width: 979px) {
+  .navbar .btn-navbar {
+    display: inline-block;
+    background-color: #00D2FF;
+    min-height: 5em;
+  }
 }
 
 /* screen size needs more love */
@@ -100,6 +108,7 @@ h3.panel-title {
 .blog-posts .nav>li>a, .blog-posts .nav>li>a:visited {
   background-color: #eee;
   opacity: 0.8;
+  padding: 2px;
 }
 
 .blog-posts .nav>li>a:hover, .blog-posts .nav>li>a:focus {
