@@ -26,7 +26,7 @@ meta:
     description: Tekkie Consulting is the consultancy company of Georgiana Gligor, an application architect crafting efficient large-scale solutions
 
 company:
-  summary: Tekkie Consulting is an application development shop that helps its clients manage complex workflows and ideas and translate them into compact, fast, usable software that is delivering value from day one. We handle projects from conception to launch and maintenance.
+  summary: We are an application development shop that helps our clients manage complex workflows and ideas. We translate them into compact, fast, usable software that delivers value from day one. We handle projects from conception to launch and maintenance.
 
   services:
     - { title: Consulting }
@@ -37,4 +37,3 @@ company:
     - { title: Testing }
     - { title: Release Management }
     - { title: Maintenance }
-
