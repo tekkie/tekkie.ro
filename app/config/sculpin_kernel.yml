@@ -4,3 +4,6 @@ sculpin_content_types:
 
 sculpin_pagination:
   max_per_page: 10
+
+sculpin_theme:
+    theme: tekkie/tekkie

@@ -33,13 +33,17 @@ footer.container {
 }
 
 .navbar-inverse.navbar-tkc .navbar-inner {
-  min-height: 100px;
+  /*min-height: 100px;*/
   background: #30384B;
 }
 
 .navbar .brand {
   margin: 1px;
   padding: 0px;
+}
+
+.navbar-brand img {
+  height: 50px;
 }
 
 /* screen size needs more love */
@@ -106,6 +110,14 @@ h3.panel-title {
   width: 29%;
 }
 
-.clear {
+.tk-services ul.pager {
   clear: both;
+  margin-bottom: 0;
+}
+
+.tk-services ul.pager li>a {
+  background-color: #30384B;
+}
+.tk-services ul.pager li>a:hover, .tk-services ul.pager li>a:focus {
+  background-color: #30384B;
 }
