@@ -44,7 +44,7 @@ Web development
   * [you.gotfoo.org][6]
 
  [1]: http://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670 "Code Complete, A Practical Handbook of Software Construction"
- [2]: http://www.smashingmagazine.com/ "Informatin that makes life easier for tekkies"
+ [2]: http://www.smashingmagazine.com/ "Information that makes life easier for tekkies"
  [3]: http://dev.iamntz.com/ "Ionut Staicu - Webdeveloper blog"
  [4]: http://www.rooftopsolutions.nl/ "Ref bijstere spor"
  [5]: http://www.codinghorror.com/blog/ "Coding Horror"

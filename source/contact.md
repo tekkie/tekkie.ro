@@ -8,7 +8,7 @@ layout: page
 <div class="vcard jumbotron">
   <div class="adr">
     <div class="org fn">
-      <div class="organization-name ">Tekkie Consulting</div>
+      <div class="organization-name">Tekkie Consulting</div>
     </div>
 
     <div class="adr">  
@@ -30,7 +30,7 @@ layout: page
 </div>
 
 <div class="vcard jumbotron">
-  <a class="fn url" href="http://gb.tekkie.ro/">Georgiana Gligor</a>, CEO of   <span class="org vcard"><a class="url fn org" rel="group" href="http://tekkie.ro">Tekkie Consulting</a></span>
+  <a class="fn url" href="http://gb.tekkie.ro/">Georgiana Gligor</a>, CEO of   <span class="org vcard"><span class="url fn org" rel="group">Tekkie Consulting</span></span>
 
   <div class="tel">
     <dt><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></dt>
