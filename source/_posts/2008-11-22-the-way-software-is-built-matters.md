@@ -2,7 +2,7 @@
 title: The way software is built matters
 author: Georgiana
 layout: post
-permalink: blog/methodology/the-way-software-is-built-matters/
+permalink: methodology/the-way-software-is-built-matters/
 ratings_users:
   - 0
 ratings_score:

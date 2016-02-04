@@ -2,7 +2,7 @@
 title: HowTo Reset Your Drupal Administrator password
 author: Georgiana
 layout: post
-permalink: blog/quick-n-dirty/howto-reset-your-drupal-administrator-password/
+permalink: quick-n-dirty/howto-reset-your-drupal-administrator-password/
 ratings_users:
   - 0
 ratings_score:

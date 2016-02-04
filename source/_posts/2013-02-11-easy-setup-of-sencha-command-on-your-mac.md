@@ -2,7 +2,7 @@
 title: Easy Setup of Sencha Command on Your Mac
 author: Georgiana
 layout: post
-permalink: blog/news/easy-setup-of-sencha-command-on-your-mac/
+permalink: news/easy-setup-of-sencha-command-on-your-mac/
 ratings_users:
   - 0
 ratings_score:

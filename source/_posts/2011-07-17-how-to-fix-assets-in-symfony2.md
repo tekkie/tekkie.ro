@@ -2,7 +2,7 @@
 title: How to fix assets in Symfony2
 author: Georgiana
 layout: post
-permalink: blog/quick-n-dirty/how-to-fix-assets-in-symfony2/
+permalink: quick-n-dirty/how-to-fix-assets-in-symfony2/
 ratings_users:
   - 0
 ratings_score:

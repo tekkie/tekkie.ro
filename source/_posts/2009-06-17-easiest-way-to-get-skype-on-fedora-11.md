@@ -2,7 +2,7 @@
 title: Easiest way to get Skype on Fedora 11
 author: Georgiana
 layout: post
-permalink: blog/computer-setup/easiest-way-to-get-skype-on-fedora-11/
+permalink: computer-setup/easiest-way-to-get-skype-on-fedora-11/
 ratings_users:
   - 0
 ratings_score:

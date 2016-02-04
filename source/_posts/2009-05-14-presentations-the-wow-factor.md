@@ -2,7 +2,7 @@
 title: 'Presentations &#8211; the wow factor'
 author: Georgiana
 layout: post
-permalink: blog/software/presentations-the-wow-factor/
+permalink: software/presentations-the-wow-factor/
 ratings_users:
   - 0
 ratings_score:

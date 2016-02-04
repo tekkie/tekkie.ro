@@ -3,7 +3,7 @@ title: 'Salesforce.com &#8211; Adopting SCRUM &#038; XP [Presentation]'
 author: Georgiana
 excerpt: 'Salesforce.com - Adopting SCRUM & XP [Presentation]'
 layout: post
-permalink: blog/methodology/salesforcecom-adopting-scrum-xp-presentation/
+permalink: methodology/salesforcecom-adopting-scrum-xp-presentation/
 ratings_users:
   - 0
 ratings_score:

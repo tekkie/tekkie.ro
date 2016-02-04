@@ -3,7 +3,7 @@ title: How do I run IE6 and IE7 (even IE8) together on the same machine?
 author: Georgiana
 excerpt: There are explained several options one has when trying to run IE6 and IE7 on the same machine.
 layout: post
-permalink: blog/software/how-do-i-run-ie6-ie7-together-same-machine/
+permalink: software/how-do-i-run-ie6-ie7-together-same-machine/
 ratings_users:
   - 0
 ratings_score:

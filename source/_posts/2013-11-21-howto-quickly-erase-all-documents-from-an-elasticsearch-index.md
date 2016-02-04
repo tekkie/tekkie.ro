@@ -2,7 +2,7 @@
 title: HowTo Quickly Erase All Documents from an ElasticSearch Index
 author: Georgiana
 layout: post
-permalink: blog/quick-n-dirty/howto-quickly-erase-all-documents-from-an-elasticsearch-index/
+permalink: quick-n-dirty/howto-quickly-erase-all-documents-from-an-elasticsearch-index/
 categories:
   - Quick and dirty
 tags:

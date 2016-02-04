@@ -2,7 +2,7 @@
 title: Checklist for the Agile Manager
 author: Georgiana
 layout: post
-permalink: blog/resources/checklist-for-the-agile-manager/
+permalink: resources/checklist-for-the-agile-manager/
 ratings_users:
   - 0
 ratings_score:

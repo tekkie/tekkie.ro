@@ -2,7 +2,7 @@
 title: hCard brief introduction
 author: Georgiana
 layout: post
-permalink: blog/resources/hcard-brief-introduction/
+permalink: resources/hcard-brief-introduction/
 ratings_users:
   - 0
 ratings_score:

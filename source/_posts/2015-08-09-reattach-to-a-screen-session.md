@@ -3,7 +3,7 @@ title: Reattach to a screen session
 author: Georgiana
 excerpt: Simple recipe for reattaching to a screen session.
 layout: post
-permalink: blog/quick-n-dirty/reattach-to-a-screen-session/
+permalink: quick-n-dirty/reattach-to-a-screen-session/
 categories:
   - Quick and dirty
 tags:

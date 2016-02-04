@@ -2,7 +2,7 @@
 title: HOWTO remove all dangling commits from your git repository
 author: Georgiana
 layout: post
-permalink: blog/news/howto-remove-all-dangling-commits-from-your-git-repository/
+permalink: news/howto-remove-all-dangling-commits-from-your-git-repository/
 ratings_users:
   - 0
 ratings_score:

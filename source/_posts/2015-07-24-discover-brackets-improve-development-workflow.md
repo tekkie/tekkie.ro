@@ -3,7 +3,7 @@ title: Discovering Brackets, or how I improved my development flow in a few hour
 author: Georgiana
 excerpt: At the beginning of my journey as a software developer, someone told me to try a plain text editor to focus on the basics. I recently chose Brackets as my editor for Javascript-based projects, and greatly improved my workflow while keeping the system resource use down.
 layout: post
-permalink: blog/software/discover-brackets-improve-development-workflow/
+permalink: software/discover-brackets-improve-development-workflow/
 categories:
   - Software
 tags:

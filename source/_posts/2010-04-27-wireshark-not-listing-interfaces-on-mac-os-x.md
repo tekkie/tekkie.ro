@@ -2,7 +2,7 @@
 title: Wireshark not listing interfaces on Mac OS X
 author: Georgiana
 layout: post
-permalink: blog/quick-n-dirty/wireshark-not-listing-interfaces-on-mac-os-x/
+permalink: quick-n-dirty/wireshark-not-listing-interfaces-on-mac-os-x/
 ratings_users:
   - 0
 ratings_score:

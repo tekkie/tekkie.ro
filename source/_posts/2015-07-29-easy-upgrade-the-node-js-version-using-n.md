@@ -3,7 +3,7 @@ title: Easy upgrade the node.js version using n
 author: Georgiana
 excerpt: Easy upgrade the node.js version using n
 layout: post
-permalink: blog/computer-setup/easy-upgrade-the-node-js-version-using-n/
+permalink: computer-setup/easy-upgrade-the-node-js-version-using-n/
 categories:
   - Computer setup
 tags:

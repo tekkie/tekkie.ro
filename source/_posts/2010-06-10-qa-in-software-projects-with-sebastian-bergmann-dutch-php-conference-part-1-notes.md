@@ -2,7 +2,7 @@
 title: QA in Software Projects with Sebastian Bergmann @ Dutch PHP Conference | Part 1 | Notes
 author: Georgiana
 layout: post
-permalink: blog/testing/qa-in-software-projects-with-sebastian-bergmann-dutch-php-conference-part-1-notes/
+permalink: testing/qa-in-software-projects-with-sebastian-bergmann-dutch-php-conference-part-1-notes/
 ratings_users:
   - 0
 ratings_score:

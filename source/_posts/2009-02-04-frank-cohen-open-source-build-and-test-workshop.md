@@ -2,7 +2,7 @@
 title: 'Frank Cohen &#8211; Open Source Build and Test Workshop'
 author: Georgiana
 layout: post
-permalink: blog/testing/frank-cohen-open-source-build-and-test-workshop/
+permalink: testing/frank-cohen-open-source-build-and-test-workshop/
 ratings_users:
   - 0
 ratings_score:

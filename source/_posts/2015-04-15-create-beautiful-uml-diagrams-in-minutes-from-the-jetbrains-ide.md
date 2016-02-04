@@ -5,7 +5,7 @@ excerpt: |
   A few days ago I needed to assemble together several disparate pieces of information about the current project. Our technology stack is complex, and people have different backgrounds, so I realised that a visual representation in UML would be the best fit.
   The current article details how to prepare a working environment using Graphviz and PlantUML in PHPStorm, then goes through the process of creating a simple sequence diagram to use them.
 layout: post
-permalink: blog/processes/create-beautiful-uml-diagrams-in-minutes-from-the-jetbrains-ide/
+permalink: processes/create-beautiful-uml-diagrams-in-minutes-from-the-jetbrains-ide/
 categories:
   - Processes
 tags:

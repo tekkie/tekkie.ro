@@ -2,7 +2,7 @@
 title: Migrating phone book from Nokia XpressMusic to Android using a Mac
 author: Georgiana
 layout: post
-permalink: blog/quick-n-dirty/migrating-phone-book-nokia-xpressmusic-android-using-mac/
+permalink: quick-n-dirty/migrating-phone-book-nokia-xpressmusic-android-using-mac/
 ratings_users:
   - 0
 ratings_score:

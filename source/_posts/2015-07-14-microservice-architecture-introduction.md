@@ -3,7 +3,7 @@ title: Microservice architecture introduction
 author: Georgiana
 excerpt: If your application is monolithic and painful to change, it is time to have a look at the microservices architecture.
 layout: post
-permalink: blog/methodology/microservice-architecture-introduction/
+permalink: methodology/microservice-architecture-introduction/
 categories:
   - Methodology
 ---

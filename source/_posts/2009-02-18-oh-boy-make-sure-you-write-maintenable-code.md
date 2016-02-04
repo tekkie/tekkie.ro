@@ -2,7 +2,7 @@
 title: Oh boy, make sure you write maintenable code
 author: Georgiana
 layout: post
-permalink: blog/news/oh-boy-make-sure-you-write-maintenable-code/
+permalink: news/oh-boy-make-sure-you-write-maintenable-code/
 ratings_users:
   - 0
 ratings_score:

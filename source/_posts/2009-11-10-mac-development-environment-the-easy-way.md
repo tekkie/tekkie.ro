@@ -3,7 +3,7 @@ title: Mac development environment, the easy way
 author: Georgiana
 excerpt: "So, you want to use that Apple machine for developing websites. That's pretty easy to setup, here are some guidelines you can use in order to create the basic environment for creating great web applications."
 layout: post
-permalink: blog/computer-setup/mac-development-environment-the-easy-way/
+permalink: computer-setup/mac-development-environment-the-easy-way/
 ratings_users:
   - 0
 ratings_score:

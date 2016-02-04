@@ -2,7 +2,7 @@
 title: 'Howto launch the iPhone simulator independently, without &#8220;Build and run&#8221;'
 author: Georgiana
 layout: post
-permalink: blog/testing/howto-launch-the-iphone-simulator-independently-without-build-and-run/
+permalink: testing/howto-launch-the-iphone-simulator-independently-without-build-and-run/
 ratings_users:
   - 0
 ratings_score:

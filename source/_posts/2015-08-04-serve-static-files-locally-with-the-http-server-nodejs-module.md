@@ -3,7 +3,7 @@ title: Serve static files locally with the http-server nodejs module
 author: Georgiana
 excerpt: Quick introduction on how to start using the http-server node module to serve local static resources while developing locally.
 layout: post
-permalink: blog/quick-n-dirty/serve-static-files-locally-with-the-http-server-nodejs-module/
+permalink: quick-n-dirty/serve-static-files-locally-with-the-http-server-nodejs-module/
 categories:
   - Quick and dirty
 tags:

@@ -3,7 +3,7 @@ title: Google Chrome issues
 author: Georgiana
 excerpt: Google Chrome not implemented issues, problems and errors
 layout: post
-permalink: blog/software/google-chrome-issues/
+permalink: software/google-chrome-issues/
 ratings_users:
   - 0
 ratings_score:

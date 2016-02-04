@@ -2,7 +2,7 @@
 title: MySQL install on Mac creates no user, how to get access as root
 author: Georgiana
 layout: post
-permalink: blog/quick-n-dirty/mysql-install-mac-no-user-get-access-root/
+permalink: quick-n-dirty/mysql-install-mac-no-user-get-access-root/
 ratings_users:
   - 0
 ratings_score:

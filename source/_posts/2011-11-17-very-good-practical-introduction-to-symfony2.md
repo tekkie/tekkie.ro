@@ -2,7 +2,7 @@
 title: Very good practical introduction to Symfony2
 author: Georgiana
 layout: post
-permalink: blog/resources/very-good-practical-introduction-to-symfony2/
+permalink: resources/very-good-practical-introduction-to-symfony2/
 ratings_users:
   - 0
 ratings_score:

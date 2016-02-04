@@ -3,7 +3,7 @@ title: JavaScript for PHP developers
 author: Georgiana
 excerpt: "If you're a PHP developer and you find it difficult to get used to all the insides of JavaScript, you might need PHP.JS, developed by Kevin van Zonneveld."
 layout: post
-permalink: blog/resources/javascript-for-php-developers/
+permalink: resources/javascript-for-php-developers/
 ratings_users:
   - 0
 ratings_score:

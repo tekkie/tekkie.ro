@@ -2,7 +2,7 @@
 title: Howto install Drupal 7 using Git
 author: Georgiana
 layout: post
-permalink: blog/cms/howto-install-drupal-7-using-git/
+permalink: cms/howto-install-drupal-7-using-git/
 ratings_users:
   - 0
 ratings_score:

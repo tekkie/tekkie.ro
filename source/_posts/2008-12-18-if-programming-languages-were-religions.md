@@ -2,7 +2,7 @@
 title: 'If programming languages were religions&#8230;'
 author: Georgiana
 layout: post
-permalink: blog/funny/if-programming-languages-were-religions/
+permalink: funny/if-programming-languages-were-religions/
 ratings_users:
   - 0
 ratings_score:

@@ -2,7 +2,7 @@
 title: Writing code is an art, not a simple day-job
 author: Georgiana
 layout: post
-permalink: blog/resources/writing-code-art-not-simple-day-job/
+permalink: resources/writing-code-art-not-simple-day-job/
 ratings_users:
   - 0
 ratings_score:

@@ -3,7 +3,7 @@ title: 'Smarty: adding two numbers'
 author: Georgiana
 excerpt: Correct syntax to add two numbers using Smarty.
 layout: post
-permalink: blog/quick-n-dirty/smarty-adding-two-numbers/
+permalink: quick-n-dirty/smarty-adding-two-numbers/
 ratings_users:
   - 0
 ratings_score:

@@ -2,7 +2,7 @@
 title: How to change your layout in Android landscape / portrait mode
 author: Georgiana
 layout: post
-permalink: blog/quick-n-dirty/how-to-change-your-layout-in-android-landscape-portrait-mode/
+permalink: quick-n-dirty/how-to-change-your-layout-in-android-landscape-portrait-mode/
 ratings_users:
   - 0
 ratings_score:

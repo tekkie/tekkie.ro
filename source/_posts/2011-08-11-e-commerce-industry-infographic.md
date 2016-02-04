@@ -2,7 +2,7 @@
 title: E-Commerce Industry Infographic
 author: Georgiana
 layout: post
-permalink: blog/news/e-commerce-industry-infographic/
+permalink: news/e-commerce-industry-infographic/
 ratings_users:
   - 0
 ratings_score:

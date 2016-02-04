@@ -3,7 +3,7 @@ title: 'Collaborative online task tracker &#8211; free'
 author: Georgiana
 excerpt: 'free online issue tracking system, with minimal set of features: No Kahuna'
 layout: post
-permalink: blog/resources/collaborative-online-task-tracker-free/
+permalink: resources/collaborative-online-task-tracker-free/
 ratings_users:
   - 0
 ratings_score:

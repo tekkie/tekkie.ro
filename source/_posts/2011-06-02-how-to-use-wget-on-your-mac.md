@@ -2,7 +2,7 @@
 title: How to use wget on your Mac
 author: Georgiana
 layout: post
-permalink: blog/computer-setup/how-to-use-wget-on-your-mac/
+permalink: computer-setup/how-to-use-wget-on-your-mac/
 ratings_users:
   - 0
 ratings_score:

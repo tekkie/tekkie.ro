@@ -2,7 +2,7 @@
 title: The Reactive Manifesto
 author: Georgiana
 layout: post
-permalink: blog/processes/the-reactive-manifesto/
+permalink: processes/the-reactive-manifesto/
 excerpt: Check out the Reactive Manifesto for ideas on cleaner architectures. It will help you build better systems that cope with large traffic values and truly accomplish their goal.
 categories:
   - Processes

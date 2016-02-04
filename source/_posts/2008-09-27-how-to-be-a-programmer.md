@@ -3,7 +3,7 @@ title: How to be a programmer
 author: Georgiana
 excerpt: 'Resource: "How to be a Programmer" by Robert Read'
 layout: post
-permalink: blog/resources/how-to-be-a-programmer/
+permalink: resources/how-to-be-a-programmer/
 ratings_users:
   - 0
 ratings_score:

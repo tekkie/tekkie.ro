@@ -2,7 +2,7 @@
 title: The Zen of Scrum 1.0
 author: Georgiana
 layout: post
-permalink: blog/methodology/the-zen-of-scrum-10/
+permalink: methodology/the-zen-of-scrum-10/
 ratings_users:
   - 0
 ratings_score:

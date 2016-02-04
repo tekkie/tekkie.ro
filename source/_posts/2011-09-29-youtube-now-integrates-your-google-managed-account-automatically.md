@@ -2,7 +2,7 @@
 title: Youtube now integrates your Google-managed account automatically
 author: Georgiana
 layout: post
-permalink: blog/news/youtube-now-integrates-your-google-managed-account-automatically/
+permalink: news/youtube-now-integrates-your-google-managed-account-automatically/
 ratings_users:
   - 0
 ratings_score:

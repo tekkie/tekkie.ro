@@ -2,7 +2,7 @@
 title: How to install git on your Mac with Snow Leopard
 author: Georgiana
 layout: post
-permalink: blog/computer-setup/how-to-install-git-on-your-mac-with-snow-leopard/
+permalink: computer-setup/how-to-install-git-on-your-mac-with-snow-leopard/
 ratings_users:
   - 0
 ratings_score:

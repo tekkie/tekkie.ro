@@ -3,7 +3,7 @@ title: Yahoo announces to anonymize data after 90 days
 author: Georgiana
 excerpt: Yahoo! annnounces that all data collected will be anonymized after 3 months, from current 13 months.
 layout: post
-permalink: blog/news/yahoo-announces-to-anonymize-data-after-90-days/
+permalink: news/yahoo-announces-to-anonymize-data-after-90-days/
 ratings_users:
   - 0
 ratings_score:

@@ -2,7 +2,7 @@
 title: How to enable mod_rewrite for Apache in Ubuntu
 author: Georgiana
 layout: post
-permalink: blog/computer-setup/how-to-enable-mod_rewrite-for-apache-in-ubuntu/
+permalink: computer-setup/how-to-enable-mod_rewrite-for-apache-in-ubuntu/
 ratings_users:
   - 0
 ratings_score:

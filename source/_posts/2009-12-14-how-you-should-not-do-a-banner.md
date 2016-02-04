@@ -2,7 +2,7 @@
 title: How you should not do a banner
 author: Georgiana
 layout: post
-permalink: blog/funny/how-you-should-not-do-a-banner/
+permalink: funny/how-you-should-not-do-a-banner/
 ratings_users:
   - 0
 ratings_score:

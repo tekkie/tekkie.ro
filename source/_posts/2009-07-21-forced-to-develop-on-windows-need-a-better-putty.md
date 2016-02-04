@@ -2,7 +2,7 @@
 title: Forced to develop on Windows? Need a better Putty?
 author: Georgiana
 layout: post
-permalink: blog/software/forced-to-develop-on-windows-need-a-better-putty/
+permalink: software/forced-to-develop-on-windows-need-a-better-putty/
 ratings_users:
   - 0
 ratings_score:

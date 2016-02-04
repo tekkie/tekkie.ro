@@ -2,7 +2,7 @@
 title: How to add and use Compiz in your Ubuntu 8.10 Intrepid 64-bit
 author: Georgiana
 layout: post
-permalink: blog/computer-setup/how-to-add-and-use-compiz-in-your-ubuntu-intrepid-64-bit/
+permalink: computer-setup/how-to-add-and-use-compiz-in-your-ubuntu-intrepid-64-bit/
 ratings_users:
   - 0
 ratings_score:

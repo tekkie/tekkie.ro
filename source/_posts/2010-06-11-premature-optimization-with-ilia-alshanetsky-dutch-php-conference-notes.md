@@ -2,7 +2,7 @@
 title: Premature Optimization with Ilia Alshanetsky @ Dutch PHP Conference | Notes
 author: Georgiana
 layout: post
-permalink: blog/news/premature-optimization-with-ilia-alshanetsky-dutch-php-conference-notes/
+permalink: news/premature-optimization-with-ilia-alshanetsky-dutch-php-conference-notes/
 ratings_users:
   - 0
 ratings_score:

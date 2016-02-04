@@ -2,7 +2,7 @@
 title: How to install Google Chrome in Ubuntu
 author: Georgiana
 layout: post
-permalink: blog/computer-setup/how-to-install-google-chrome-in-ubuntu/
+permalink: computer-setup/how-to-install-google-chrome-in-ubuntu/
 ratings_users:
   - 0
 ratings_score:

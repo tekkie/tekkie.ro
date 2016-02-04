@@ -2,7 +2,7 @@
 title: HowTo Easily Upgrade Ruby on Mountain Lion
 author: Georgiana
 layout: post
-permalink: blog/computer-setup/howto-easily-upgrade-ruby-on-mountain-lion/
+permalink: computer-setup/howto-easily-upgrade-ruby-on-mountain-lion/
 ratings_users:
   - 0
 ratings_score:

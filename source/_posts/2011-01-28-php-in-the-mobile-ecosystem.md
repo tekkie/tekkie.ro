@@ -2,7 +2,7 @@
 title: PHP in the mobile ecosystem
 author: Georgiana
 layout: post
-permalink: blog/mobile-development/php-in-the-mobile-ecosystem/
+permalink: mobile-development/php-in-the-mobile-ecosystem/
 ratings_users:
   - 0
 ratings_score:

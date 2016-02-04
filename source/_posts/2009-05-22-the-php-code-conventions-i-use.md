@@ -2,7 +2,7 @@
 title: The PHP code conventions I use
 author: Georgiana
 layout: post
-permalink: blog/resources/the-php-code-conventions-i-use/
+permalink: resources/the-php-code-conventions-i-use/
 ratings_users:
   - 0
 ratings_score:

@@ -2,7 +2,7 @@
 title: Howto delete a branch in git
 author: Georgiana
 layout: post
-permalink: blog/quick-n-dirty/howto-delete-a-branch-in-git/
+permalink: quick-n-dirty/howto-delete-a-branch-in-git/
 ratings_users:
   - 0
 ratings_score:

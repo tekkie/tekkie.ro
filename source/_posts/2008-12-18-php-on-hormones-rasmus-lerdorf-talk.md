@@ -2,7 +2,7 @@
 title: 'PHP on Hormones: Rasmus Lerdorf talk'
 author: Georgiana
 layout: post
-permalink: blog/resources/php-on-hormones-rasmus-lerdorf-talk/
+permalink: resources/php-on-hormones-rasmus-lerdorf-talk/
 ratings_users:
   - 0
 ratings_score:

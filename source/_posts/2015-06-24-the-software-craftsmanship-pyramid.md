@@ -3,7 +3,7 @@ title: The Software Craftsmanship Pyramid
 author: Georgiana
 excerpt: There is no standard recipe to become a software craftsman. We attempt to structure the various stages in a pyramid shape, to help anyone interested to follow how the mindset changes are best approached.
 layout: post
-permalink: blog/processes/the-software-craftsmanship-pyramid/
+permalink: processes/the-software-craftsmanship-pyramid/
 categories:
   - Processes
 ---

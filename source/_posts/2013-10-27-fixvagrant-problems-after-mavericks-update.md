@@ -2,7 +2,7 @@
 title: Fix Vagrant problems after Mavericks update
 author: Georgiana
 layout: post
-permalink: blog/computer-setup/fixvagrant-problems-after-mavericks-update/
+permalink: computer-setup/fixvagrant-problems-after-mavericks-update/
 categories:
   - Computer setup
   - Mac OSX

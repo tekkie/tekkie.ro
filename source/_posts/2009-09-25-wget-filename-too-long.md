@@ -2,7 +2,7 @@
 title: 'Wget: filename too long'
 author: Georgiana
 layout: post
-permalink: blog/quick-n-dirty/wget-filename-too-long/
+permalink: quick-n-dirty/wget-filename-too-long/
 ratings_users:
   - 0
 ratings_score:

@@ -2,7 +2,7 @@
 title: Sound is not working after upgrading to Ubuntu 9.04 (Jaunty Jackalope)
 author: Georgiana
 layout: post
-permalink: blog/computer-setup/sound-is-not-working-after-upgrading-to-ubuntu-904-jaunty-jackalope/
+permalink: computer-setup/sound-is-not-working-after-upgrading-to-ubuntu-904-jaunty-jackalope/
 ratings_users:
   - 0
 ratings_score:

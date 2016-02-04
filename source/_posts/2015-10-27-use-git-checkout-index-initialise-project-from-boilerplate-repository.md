@@ -3,7 +3,7 @@ title: Using git checkout-index to init project from boilerplate repository
 author: Georgiana
 excerpt: As developers, we are always looking for inspiration in other people’s code. Either we learn something totally unfamiliar to us, or we are just in for a trick, but what makes us better developers is the social aspect of coding. How do we start a project from a boilerplate repository using just git commands?
 layout: post
-permalink: blog/methodology/use-git-checkout-index-initialise-project-from-boilerplate-repository/
+permalink: methodology/use-git-checkout-index-initialise-project-from-boilerplate-repository/
 categories:
   - Methodology
 tags:

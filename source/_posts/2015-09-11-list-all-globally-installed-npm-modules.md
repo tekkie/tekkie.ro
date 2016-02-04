@@ -3,7 +3,7 @@ title: List all globally installed npm modules
 author: Georgiana
 excerpt: List all globally installed npm modules
 layout: post
-permalink: blog/computer-setup/list-all-globally-installed-npm-modules/
+permalink: computer-setup/list-all-globally-installed-npm-modules/
 categories:
   - Computer setup
 tags:

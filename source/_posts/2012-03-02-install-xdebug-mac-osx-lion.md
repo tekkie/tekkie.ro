@@ -2,7 +2,7 @@
 title: Install Xdebug on Mac OSX Lion
 author: Georgiana
 layout: post
-permalink: blog/computer-setup/install-xdebug-mac-osx-lion/
+permalink: computer-setup/install-xdebug-mac-osx-lion/
 ratings_users:
   - 0
 ratings_score:

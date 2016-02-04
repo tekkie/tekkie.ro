@@ -2,7 +2,7 @@
 title: 56 geek / tekkie types
 author: Georgiana
 layout: post
-permalink: blog/funny/56-geek-tekkie-types/
+permalink: funny/56-geek-tekkie-types/
 ratings_users:
   - 0
 ratings_score:

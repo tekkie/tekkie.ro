@@ -3,7 +3,7 @@ title: 'Developing a Facebook application: set up local environment'
 author: Georgiana
 excerpt: Detailed steps on how to set up local environment for developing a Facebook application and connecting it to a localhost URL.
 layout: post
-permalink: blog/resources/developing-a-facebook-application-set-up-local-environment/
+permalink: resources/developing-a-facebook-application-set-up-local-environment/
 categories:
   - Resources
 tags:

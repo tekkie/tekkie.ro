@@ -2,7 +2,7 @@
 title: 'Software branching strategies: A git overview | Part 1: gitworkflows'
 author: Georgiana
 layout: post
-permalink: blog/revision-control/software-branching-strategies-a-git-overview-part-1-gitworkflows/
+permalink: revision-control/software-branching-strategies-a-git-overview-part-1-gitworkflows/
 categories:
   - Processes
   - Revision control

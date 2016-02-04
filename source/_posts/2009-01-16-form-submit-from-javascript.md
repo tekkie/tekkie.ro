@@ -2,7 +2,7 @@
 title: Form submit from JavaScript
 author: Georgiana
 layout: post
-permalink: blog/news/form-submit-from-javascript/
+permalink: news/form-submit-from-javascript/
 ratings_users:
   - 0
 ratings_score:
