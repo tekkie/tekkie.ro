@@ -1,5 +1,11 @@
-h4 small
-{
+
+body {
+  font-family: Arial,lucida-sans,Helvetica,Tahoma;
+  background: url('../images/background.jpg');
+}
+
+
+h4 small {
     display: block;
     font-size: 60%;
     color: #888;
@@ -10,9 +16,9 @@ h4 small
 }
 
 footer.container {
-    margin-top: 30px;
-    padding: 30px 0;
-    border-top: 1px dashed #aaa;
+/*    margin-top: 30px;*/
+    padding: 10px 0;
+/*    border-top: 1px dashed #aaa;*/
 }
 
 @media (max-width: 767px) {
@@ -54,7 +60,8 @@ footer.container {
 }
 
 .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
-  color: #CC3514;
+  color: #fff;
+  border-top: 5px solid #ccc;
 }
 
 .navbar .brand {
@@ -93,7 +100,8 @@ footer.container {
 }
 
 article h2, h3 {
-  font-family: 'Amaranth';
+/*  font-family: 'Amaranth';*/
+  font-family: "futura-pt",sans-serif;
   font-weight: 700;
   font-size: 28px;
 }
@@ -107,8 +115,10 @@ a, a:hover, a:focus {
   color: #CC3514;
 }
 
-body {
-  font-family: Helvetica;
+.separator-bottom {
+  background: url('../images/separator-for-bottom.png') repeat-x;
+  width: 100%;
+  height: 17px;
 }
 
 .panel {
@@ -161,9 +171,50 @@ h3.panel-title {
 }
 
 .tel dd, .email dd {
-  margin-left: 2em;
+  margin-left: 5px;
+  display: inline-block;
 }
 
 .tel>span.glyphicon {
   margin-right: 1em;
+}
+
+footer ul.social {
+  list-style: none;
+}
+
+footer ul.social li {
+  display: inline-block;
+  padding: 0 1em;
+}
+
+footer ul.social li a {
+  display: block;
+  width: 48px;
+  height: 48px;
+  text-indent: -99999px;
+}
+
+footer ul.social li.facebook a {
+  background: url('../images/social/black-facebook.png') bottom no-repeat;
+}
+
+footer ul.social li.facebook a:hover {
+  background: url('../images/social/colour-facebook.png') bottom no-repeat;
+}
+
+footer ul.social li.github a {
+  background: url('../images/social/black-github.png') bottom no-repeat;
+}
+
+footer ul.social li.github a:hover {
+  background: url('../images/social/colour-github.png') bottom no-repeat;
+}
+
+footer ul.social li.twitter a {
+  background: url('../images/social/black-twitter.png') bottom no-repeat;
+}
+
+footer ul.social li.twitter a:hover {
+  background: url('../images/social/colour-twitter.png') bottom no-repeat;
 }
