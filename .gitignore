@@ -8,3 +8,5 @@
 s3.conf
 /source/themes/sculpin
 /vendor/
+
+config.codekit
