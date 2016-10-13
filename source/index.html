@@ -19,58 +19,66 @@ use:
 
 {% block content %}
 
-<div class="tk-services container">
 
-<div class="jumbotron">
-  <h1>Tekkie Consulting</h1>
-  <p>{{ site.company.summary }}</p>
+  <section class="intro-img">
+      <div class="container">
+        <div class=intro-text>
+          <h1 class="intro-title">Tekkie Consulting</h1>
+          <div class="company-summary"><p>{{ site.company.summary }}</p></div>
+        </div>
 
+      <a href="{{ site.url }}/services" role="button" class="btn btn-lg intro-cta-button btn-primary">Check out more <span aria-hidden="true"></span></a>
 
-  {% for service in site.company.services %}
-  <div class="panel panel-default">
-
-    <div class="panel-body">
-      {{ service.title }}
+      </div>
+  </section><!-- end intro img -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-intro">
+        <h2 class="section-intro-title">What we do</h2>
+        <div class="section-summary"><p>Tekkie Consulting offers the following high quality services.</p></div>
+      </div>
+      {% for service in site.company.services %}
+          <div class="col-md-3 col-sm-3 col-xs-6 margin-bottom text=center">
+            <h4 class="text-center service-text {{service.title}}">{{ service.title }}</h4>
+          </div>
+      {% endfor %}
     </div>
+  </section>
 
-  </div>
-  {% endfor %}
 
-  <nav>
-    <ul class="pager">
-      <li class="next"><a href="{{ site.url }}/services" role="button" class="btn btn-primary btn-lg">Check our services <span aria-hidden="true">&rarr;</span></a></li>
-    </ul>
-  </nav>
-</div>
-</div>
-
-<div class="container blog-posts">
-  <h2>From the blog</h2>
+<section class="section-blog-posts">
+  <div class="container">
+    <div class="section-intro">
+      <h2 class="section-intro-title">From our blog</h2>
+      <div class="section-summary"><p>The latest news from our blog. Happy reading.</p></div>
+    </div>
 {% for post in page.pagination.items %}
-{% set postTitle = post.title[0:60] %}
-{% if postTitle|length < post.title|length %}{% set postTitle = postTitle ~ "..." %}{% endif %}
-  <div class="panel span4">
-    <div class="panel-heading">
-      <h3 class="panel-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ postTitle }}</a></h3>
-    </div>
-    {% if post.meta.tags %}
-    <div class="panel-body">
-        <span class="glyphicon glyphicon-tags" aria-hidden="true"></span>
-        <ul class="tags nav nav-pills">
-        {% for tag in post.meta.tags %}
-        <li role="presentation"><a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}" class="btn-xs">{{ tag }}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
-    <div class="panel-footer">
-      {% if post.excerpt %}
-        {{ post.excerpt }}
-      {% else %}
-        {{ post.blocks.content|raw }}
+{% set postTitle = post.title %}
+    <div class="col-md-4 clear">
+      {% if postTitle|length < post.title|length %}{% set postTitle = postTitle ~ "..." %}{% endif %}
+
+          <div class="post-title">
+            <h3 class="article-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ postTitle }}</a></h3>
+          </div>
+
+          {% if post.meta.tags %}
+            {% for tag in post.meta.tags %}
+              <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}" class="btn btn-default btn-xs"><i class="ion-ios-pricetags-outline" ></i>{{ tag }}</a>
+            {% endfor %}
+
+            {% if post.excerpt %}
+              <div class="post-excerpt">
+                <p class="fp-excerpt">{{ post.excerpt }}</p>
+              </div>
+            {% else %}
+              <p class="fp-content">{{ post.blocks.content|raw[0:100] }}</p>
+            {% endif %}
+            <a class="btn btn-primary" href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">Read more</a>
+
+
       {% endif %}
-    </div>
-    {% endif %}
-  </div>
+      </div>
 {% endfor %}
 </div>
+</section>
 {% endblock %}

@@ -17,7 +17,7 @@ pagination:
 {% block title %}{{ page.title }} "{{ page.category }}"{% endblock %}
 {% block content %}
 {% set year = '0' %}
-
+<div class="container">
 <header class="page-header">
   <h1 class="page-header">{{ page.category }}</h1>
   <div class="taxonomy-description">
@@ -52,5 +52,6 @@ pagination:
     {% endif %}
     </nav>
 {% endif %}
+    </div>
 </div>
 {% endblock content %}

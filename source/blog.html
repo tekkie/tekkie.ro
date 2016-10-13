@@ -5,39 +5,62 @@ title: Blog
 menu_active: blog
 generator: pagination
 pagination:
-    max_per_page: 16
+    max_per_page: 8
 use:
     - posts
     - posts_categories
 
 ---
-{% set year = '0' %}
-<h2>Posts Archive</h2>
+
+<section class="section-blog">
+  
+   
 {% for post in page.pagination.items %}
-{% set this_year %}{{ post.date | date("Y") }}{% endset %}
-{% if year != this_year %}
-  {% set month = '0' %}
-  {% set year = this_year %}
-{% endif %}
-{% set this_month %}{{ post.date | date("F") }}{% endset %}
-{% if month != this_month %}
-  {% set month = this_month %}
-  <h3>{{ month }} {{ year }}</h3>
-{% endif %}
-  <div>
-    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-  </div>
+{% set postTitle = post.title %}
+    <div class="col-md-12 clear blog-posts margin-bottom">
+      {% if postTitle|length < post.title|length %}{% set postTitle = postTitle ~ "..." %}{% endif %}
+
+          <div class="post-title">
+            <h3 class="article-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ postTitle }}</a></h3>
+          </div>
+
+          {% if post.meta.tags %}
+            {% for tag in post.meta.tags %}
+              <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}" class="btn btn-default btn-xs"><i class="ion-ios-pricetags-outline" ></i>{{ tag }}</a>
+            {% endfor %}
+
+            {% if post.excerpt %}
+              <div class="post-excerpt">
+                <p class="fp-excerpt">{{ post.excerpt[0:200] }}</p>
+              </div>
+            {% else %}
+              <p class="fp-content">{{ post.blocks.content|raw[0:500] }}</p>
+            {% endif %}
+            <a class="btn btn-primary" href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">Read more</a>
+
+
+      {% endif %}
+      </div>
 {% endfor %}
 
-<div>
-{% if page.pagination.previous_page or page.pagination.next_page %}
-    <nav class="article clearfix">
-    {% if page.pagination.previous_page %}
-    <a class="previous" href="{{ site.url }}{{ page.pagination.previous_page.url }}" title="Previous Page"><span class="title">Previous Page</span></a>
-    {% endif %}
-    {% if page.pagination.next_page %}
-    <a class="next" href="{{ site.url }}{{ page.pagination.next_page.url }}" title="Next Page"><span class="title">Next Page</span></a>
-    {% endif %}
-    </nav>
-{% endif %}
-</div>
+
+  <div class="text-center">
+  {% if page.pagination.previous_page or page.pagination.next_page %}
+      <nav class="article clearfix">
+          
+      {% if page.pagination.previous_page %}
+        <a class="previous" href="{{ site.url }}{{ page.pagination.previous_page.url }}" title="Previous Page"><span class="title">Previous Page</span></a>
+      {% endif %}
+          
+      {% if page.pagination.next_page %}
+        <a class="next" href="{{ site.url }}{{ page.pagination.next_page.url }}" title="Next Page"><span class="title">Next Page</span></a>
+      {% endif %}
+      </nav>
+  {% endif %}
+  </div>
+
+</section>
+
+
+
+
