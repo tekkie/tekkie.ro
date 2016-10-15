@@ -29,11 +29,11 @@ company:
   summary: We are an application development shop that helps our clients manage complex workflows and ideas. We translate them into compact, fast, usable software that delivers value from day one. We handle projects from conception to launch and maintenance.
 
   services:
+    - { title: Testing, description: "BDD and TDD are at the core of how we build software, so we don't miss out on functionality or introduce regression issues" }
+    - { title: Architecture, description: "Scalability comes from laying out a good architecture of the project, no matter its size. All projects can explode quickly, and we make sure you can welcome the increased traffic." }
+    - { title: Release Management, description: "After coding the functionality, we ensure it gets properly packaged and delivered on the target machines using automated, repeatable procedures to eliminate failures" }
     - { title: Consulting, description: "We assess your current issues and offer insightful advice on how to remove the pain points" }
     - { title: Prototyping, description: "We are strong believers in prototyping ideas before spending lots of money for developing them fully." }
-    - { title: Business Analysis, description: "Most costs can be saved by a strong initial analysis" }
-    - { title: Architecture, description: "Scalability comes from laying out a good architecture of the project, no matter its size. All projects can explode quickly, and we make sure you can welcome the increased traffic." }
-    - { title: Development, description: "Using agile practices, we ensure you get what you asked for in terms of functionality, as well as integration between various system components." }
-    - { title: Testing, description: "BDD and TDD are at the core of how we build software, so we don't miss out on functionality or introduce regression issues" }
-    - { title: Release Management, description: "After coding the functionality, we ensure it gets properly packaged and delivered on the target machines using automated, repeatable procedures to eliminate failures" }
     - { title: Maintenance, description: "We ensure you keep your costs low byoffering support and maintenance for the entire lifetime of the software we've delivered" }
+    - { title: Business Analysis, description: "Most costs can be saved by a strong initial analysis" }  
+    - { title: Development, description: "Using agile practices, we ensure you get what you asked for in terms of functionality, as well as integration between various system components." }

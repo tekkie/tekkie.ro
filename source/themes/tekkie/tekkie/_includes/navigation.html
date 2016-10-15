@@ -1,19 +1,19 @@
 <header>
     <div class="navbar navbar-inverse navbar-fixed-top navbar-tkc">
         <div class="navbar-inner">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="navbar-header">
-                  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
-                  </a>
+                  </button>
                   <a class="navbar-brand" href="{{ site.url }}/">
                     <img src="{{ site.url }}/{{ theme_path("assets/images/logomark-tekkie-white.svg") }}" />
                     <span>{{ site.title }}</span>
                   </a>
                 </div><!-- .navbar-header -->
-                <div class="navbar-collapse collapse">
+                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li{% if page.layout == 'post' or page.menu_active == 'blog' %} class="active"{% endif %}><a href="{{ site.url }}/blog">Blog</a></li>
                         <li{% if page.menu_active == 'services' %} class="active"{% endif %}><a href="{{ site.url }}/services">Services</a></li>
@@ -25,3 +25,5 @@
         </div>
     </div>
 </header>
+
+
