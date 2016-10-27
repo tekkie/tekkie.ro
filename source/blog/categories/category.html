@@ -1,11 +1,12 @@
 ---
-layout: simple
+layout: default
 title: Blog Posts Category
 generator: [posts_category_index, pagination]
 pagination:
     provider: page.category_posts
 pagination:
     max_per_page: 150
+menu_active: 'blog'
 
 ---
 
@@ -19,7 +20,7 @@ pagination:
 {% set year = '0' %}
 <div class="container">
 <header class="page-header">
-  <h1 class="page-header">{{ page.category }}</h1>
+  <h1 class="page-header"><i class="ion-ios-folder-outline"></i>{{ page.category }}</h1>
   <div class="taxonomy-description">
     There are {{ page.pagination.total_items }} posts filled in <strong>{{ page.category }}</strong>{% if page.pagination.previous_page or page.pagination.next_page %} (this is page <strong>{{ page.pagination.page }}</strong> of <strong>{{ page.pagination.total_pages }}</strong>){% endif %}.
   </div>
@@ -41,17 +42,28 @@ pagination:
 </article>
 {% endfor %}
 
-<div>
-{% if page.pagination.previous_page or page.pagination.next_page %}
-    <nav class="article clearfix">
-    {% if page.pagination.previous_page %}
-    <a class="previous" href="{{ site.url }}{{ page.pagination.previous_page.url }}" title="Previous Page"><button><span class="title">Previous Page</span></button></a>
-    {% endif %}
-    {% if page.pagination.next_page %}
-    <a class="next" href="{{ site.url }}{{ page.pagination.next_page.url }}" title="Next Page"><button><span class="title">Next Page</span></button></a>
-    {% endif %}
-    </nav>
-{% endif %}
-    </div>
+
 </div>
 {% endblock content %}
+
+
+{% block contentSidebar %}
+<div>
+    {% if page.pagination.previous_page or page.pagination.next_page %}
+    <nav class="article clearfix">
+        <ul class="next-previous-navigation">
+            {% if page.pagination.previous_page %}
+            <li class="previous-post">
+                <a href="{{ site.url }}{{ page.pagination.previous_page.url }}" title="Previous Page">Previous Page</a>
+            </li>
+            {% endif %}
+            <li class="next-post">
+                {% if page.pagination.next_page %}
+                <a class="next" href="{{ site.url }}{{ page.pagination.next_page.url }}" title="Next Page">Next Page</a>
+                {% endif %}
+            </li>
+        </ul>
+    </nav>
+    {% endif %}
+</div>
+{% endblock contentSidebar %}

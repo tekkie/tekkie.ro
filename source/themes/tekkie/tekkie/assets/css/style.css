@@ -317,7 +317,7 @@ footer ul.social li.twitter a:hover {
 .service-description{text-align: justify; max-width: 350px; margin:0 auto;}
 .page-services-section{padding:50px 0 50px 0;}
 /* Footer */
-.footer {padding:50px 0 0 0 !important; background: #30384B; color:white; }
+.footer {padding:25px 0 0 0 !important; background: #30384B; color:white; }
 .footer-widget-title{color:white;}
 .footer-icon{font-size:25px; margin-right:20px; color:white; transition: all .2s ease-in-out;}
 .footer-nav-link{display:block; margin-bottom:15px; color:white; transition: all .2s ease-in-out;}
@@ -338,3 +338,45 @@ footer ul.social li.twitter a:hover {
 .cc_logo{display: none !important;}
 /* Map */
 #map { height: 400px; }
+
+/* blogpost navigation links */
+ul.next-previous-navigation {
+    width: 100%;
+    margin-bottom: 2em;
+}
+ul.next-previous-navigation > li {
+    width: 100%;
+    float: left;
+    list-style-type: none;
+    padding: 1em;
+}
+ul.next-previous-navigation > li.next-post:after {
+    content: '\f427';
+    font-family:'Ionicons';
+    padding-left: 1em;
+    color:#30384B;
+}
+ul.next-previous-navigation > li.previous-post:before {
+    content: '\f4a1';
+    font-family:'Ionicons';
+    padding-right: 1em;
+    color:#30384B;
+}
+
+/** blogpost page */
+header {
+    clear: both;
+    margin-top: 1em;
+}
+
+/** blogpost meta information */
+a i.ion-ios-pricetags-outline,
+a i.ion-ios-folder-outline {
+    margin-right: .5em;
+}
+
+/** category and tag page header */
+h1.page-header i.ion-ios-folder-outline,
+h1.page-header i.ion-ios-pricetags-outline {
+    margin-right: .5em;
+}

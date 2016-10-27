@@ -50,11 +50,7 @@
                     {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
                 </div>
                 <div class="col-md-4 sidebar">
-<!--
-                    <div class="well">
-                      <h4>{{ site.title }}{% if site.subtitle %} <small>{{ site.subtitle }}</small>{% endif %}</h4>
-                    </div>
--->
+                    {% block contentSidebar %}
                     {% if data.posts_categories %}
                     <div class="well-xs sidebar-nav">
                       <h4 class="sidebar-title">Categories</h4>
@@ -65,7 +61,7 @@
                       </ul>
                     </div>
                     {% endif %}
-                    
+                    {% endblock %}
                 </div>
             </div>
         </div>
