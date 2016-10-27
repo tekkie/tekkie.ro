@@ -364,7 +364,7 @@ ul.next-previous-navigation > li.previous-post:before {
 }
 
 /** blogpost page */
-header {
+article header {
     clear: both;
     margin-top: 1em;
 }
