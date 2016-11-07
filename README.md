@@ -19,3 +19,9 @@ The development environment is accessible at [`http://localhost:12345/`](http://
 ```bash
 ➤ sculpin generate --watch --server --url=http://localhost:12345 --port=12345
 ```
+
+The style is now SASS, so you need to
+```bash
+➤ cd source/themes/tekkie/tekkie/assets/css
+➤ sass --watch style.scss:style.css
+```
