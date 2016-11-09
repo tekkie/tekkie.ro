@@ -16,15 +16,14 @@ footer .container {
 .sidebar-list {
   list-style-type: none;
   margin: 0;
-  padding: 0;
-  /*color:*/ }
+  padding: 0; }
   .sidebar-list a {
     color: #3D5899; }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .sidebar {
     padding-top: 30px; } }
-@media (min-width: 980px) {
+@media (min-width: 992px) {
   body {
     padding-top: 60px;
     /* 60px to make the container go all the way to the bottom of the topbar */ } }
@@ -66,7 +65,7 @@ footer .container {
 .navbar-brand, .navbar-brand > img:hover {
   transform: rotatez(360deg); }
 
-@media (max-width: 979px) {
+@media (max-width: 991px) {
   .navbar .btn-navbar {
     display: inline-block;
     background-color: #00D2FF;
@@ -75,12 +74,11 @@ footer .container {
   height: inherit; }
 
 /* screen size needs more love */
-@media (min-width: 979px) {
+@media (min-width: 992px) {
   .navbar .nav {
     float: right;
     margin: 0 1em .5em 1em; } }
 article h2, h3 {
-  /*  font-family: 'Amaranth';*/
   font-family: "futura-pt",sans-serif;
   font-weight: 700;
   font-size: 28px; }
@@ -143,36 +141,11 @@ h3.panel-title {
 .tel > span.glyphicon {
   margin-right: 1em; }
 
-footer ul.social {
-  list-style: none; }
-
-footer ul.social li {
-  display: inline-block;
-  padding: 0 1em; }
-
-footer ul.social li a {
-  display: block;
-  width: 48px;
-  height: 48px;
-  text-indent: -99999px; }
-
-footer ul.social li.facebook a {
-  background: url("../images/social/black-facebook.png") bottom no-repeat; }
-
-footer ul.social li.facebook a:hover {
-  background: url("../images/social/colour-facebook.png") bottom no-repeat; }
-
-footer ul.social li.github a {
-  background: url("../images/social/black-github.png") bottom no-repeat; }
-
-footer ul.social li.github a:hover {
-  background: url("../images/social/colour-github.png") bottom no-repeat; }
-
-footer ul.social li.twitter a {
-  background: url("../images/social/black-twitter.png") bottom no-repeat; }
-
-footer ul.social li.twitter a:hover {
-  background: url("../images/social/colour-twitter.png") bottom no-repeat; }
+footer a:hover {
+  color: inherit;
+  text-decoration: none; }
+  footer a:hover i {
+    color: #CC3514; }
 
 /* Global styles */
 .margin-bottom {
@@ -462,5 +435,30 @@ a i.ion-ios-folder-outline {
 h1.page-header i.ion-ios-folder-outline,
 h1.page-header i.ion-ios-pricetags-outline {
   margin-right: .5em; }
+
+/** about us page */
+.media.geeks {
+  margin-bottom: 2em; }
+  .media.geeks h3 {
+    color: inherit;
+    font-weight: 200;
+    font-size: large; }
+  .media.geeks .media-object {
+    max-width: 150px; }
+  .media.geeks .media-body a {
+    color: #3D5899; }
+  .media.geeks .media-body div {
+    display: inline-block;
+    padding-right: 1em; }
+    .media.geeks .media-body div i {
+      padding-right: .5em; }
+
+.geek-icon {
+  font-size: 25px;
+  margin-right: 20px;
+  transition: all .2s ease-in-out; }
+
+.big-call-to-action {
+  margin: 1em 10% 3em 10%; }
 
 /*# sourceMappingURL=style.css.map */

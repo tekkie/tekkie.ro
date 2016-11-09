@@ -2,7 +2,7 @@
 title: Contact
 author: Georgiana
 menu_active: contact
-layout: simple
+layout: default-with-map
 ---
 <section class="section-contact">
   <div class="container">

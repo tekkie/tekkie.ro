@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         {% block head_meta %}
-  <meta name="robots" content="follow">
+  <meta name="robots" content="noindex, follow">
         {% endblock %}
 
         {% block meta %}{% endblock %}
@@ -64,4 +64,27 @@
                 </div>
             </div>
         </div>
+
+{% block scripts_after %}
+<!-- G MAPS -->
+<script type="text/javascript">
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat:46.064335, lng:23.567661 },
+    zoom: 17,
+    scrollwheel:  false
+  });
+  var marker = new google.maps.Marker({
+    position: {lat:46.064335, lng:23.567661 },
+    map: map,
+    title: 'Tekkie Consulting SRL'
+  });
+}
+</script>
+<script
+  src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCnYexG1baJuF81957Mxn7LgimbeYXL9cE&callback=initMap">
+</script>
+{% endblock %}
+
 {% include "footer" %}

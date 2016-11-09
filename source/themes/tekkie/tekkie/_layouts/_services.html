@@ -11,13 +11,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         {% block head_meta %}
-  <meta name="robots" content="noindex, follow">
+  <meta name="robots" content="follow">
         {% endblock %}
 
         {% block meta %}{% endblock %}
 
-  <link href="{{ site.url }}/components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link href="{{ site.url }}/components/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="style" type="text/css">
   {% for stylesheet in theme_paths("assets/css/style.css") %}
   <link href="{{ site.url }}/{{ stylesheet }}" rel="stylesheet" media="screen" />
@@ -50,11 +49,6 @@
                     {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
                 </div>
                 <div class="span4 sidebar">
-<!--
-                    <div class="well">
-                      <h4>{{ site.title }}{% if site.subtitle %} <small>{{ site.subtitle }}</small>{% endif %}</h4>
-                    </div>
--->
                     {% if data.posts_categories %}
                     <div class="well-xs sidebar-nav">
                       <h4>Categories</h4>
