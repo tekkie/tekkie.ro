@@ -1,20 +1,59 @@
 ---
 title: About
 author: Georgiana
-layout: page
+layout: simple
+menu_active: about
+use:
+  - geeks
+
 ---
-My name is Georgiana Gligor, and I am crafting professional software since 2003. I am a geek, a mother, and a do-er. I am in the software business because I want to make our lives better, simpler, more efficient.
 
-I have touched every aspect in the life cycle of software development, from assessing and understanding the client needs, to documenting the functional requirements, assembling the team, preparing the technical specifications, selecting the tools, setting up the development environment, conducting code reviews, pair programming with both frontend and backend developers, mentoring junior team members, writing up documentation, ensuring a high quality of the software delivered, setting up and conducting performance tests, ensuring continuous delivery mechanisms oresent as part of the daily team routine, supplying installation instructions for production use, ensuring test coverage, and documentation.
-
-I strongly believe that being able to wear several technical hats is what makes a great all-round developer and a reliable technical manager that can be trusted to deliver on time and at high standards of quality. I enjoy mostly life in the backend side of the process, where the meat and sauce is, because I believe that the more stable, scalable, and resilient the software is, the more value it can deliver to its end users. However, I value the frontend work just as much, as the ease of use is equally important to being able to get the job done. Usability is a key part of software development practices that I follow, and that translates to simpler, better products.
-
-Since 2011 my consulting and development services are delivered using the Tekkie Consulting company.
+# We love legacy code
 
 We bring new life to old software, making sure all the existing functionality stays in place, easing the process of adding new functionality and elliminating bugs. After conducting an audit, we deliver you a detailed insight of your current situation, with clear recommendations on what can be improved, and recommendations of steps to be taken.
 
-After having successfully delivered several large-scale products on tight timeframes, I can help you with targeted advice and hands-on help on product creation, development, and maintenance, without any compromise to the quality.
+After having successfully delivered several large-scale products on tight timeframes, we can help you with targeted advice and hands-on help on product creation, development, and maintenance, without any compromise to the quality.
 
-For more detailed insight on my professional path, please consult [Georgiana Gligor&#8217;s LinkedIn profile][1].
+# Our Process
 
- [1]: http://ro.linkedin.com/in/gbtekkie
+We embrace your project from the quality perspective. Not being biased by having written the code, we focus on making sure it's stable, highly performant, and really meeting your needs.
+
+* First, we discover it by performing manual testing and documenting it thoroughly.
+* Then we analyse the packaging and shipping part.
+* Next step is to automate the testing process, so that you can ensure new functionality is not breaking existing one.
+* After that, we simplify and automate delivery. Continuously knowing you're meeting your goals is our main concern.
+
+<div class="big-call-to-action">
+    <a class="btn btn-block btn-lg btn-danger" href="/contact" role="button">Talk to us</a>
+</div>
+
+{% for geek in data.geeks %}
+<div class="media geeks">
+  <div class="media-left media-middle">
+    <img class="media-object img-rounded" src="{{ site.url }}/avatars/{{ geek.avatar }}" />
+  </div>
+  <div class="media-body">
+    <h2 class="media-heading">{{ geek.name }} <small>{{ geek.position }}</small></h2>
+    {% if geek.linkedin %}
+    <a href="{{ geek.linkedin }}"><i class="geek-icon ion-social-linkedin-outline"></i></a>
+    {% endif %}
+    {% if geek.twitter %}
+    <a href="{{ geek.twitter }}"><i class="geek-icon ion-social-twitter-outline"></i></a>
+    {% endif %}
+    {% if geek.facebook %}
+    <a href="{{ geek.facebook }}"><i class="geek-icon ion-social-facebook-outline"></i></a>
+    {% endif %}
+    {% if geek.skype %}
+    <a href="{{ geek.skype }}"><i class="geek-icon ion-social-skype-outline"></i></a>
+    {% endif %}
+    
+    {% if geek.tags | length %}
+    <p>
+    {% for tag in geek.tags %}
+    <div><i class="ion-ios-pricetags-outline"></i>{{ tag }}</div>
+    {% endfor %}
+    </p>
+    {% endif %}
+  </div>
+</div>
+{% endfor %}

@@ -1,6 +1,12 @@
 sculpin_content_types:
-    posts:
-      permalink: blog/:year/:month/:day/:filename/
+  geeks:
+    type: path
+    path: _geeks
+    singular_name: geek
+    enabled: true
+
+  posts:
+    permalink: blog/:year/:month/:day/:filename/
 
 sculpin_pagination:
   max_per_page: 10
