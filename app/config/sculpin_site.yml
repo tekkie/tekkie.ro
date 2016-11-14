@@ -3,7 +3,9 @@
 # in a template to get the contents of the `title` key.
 title: Tekkie Consulting
 subtitle: Think. Discover. Design. Develop.
-email: office+website@tekkie.ro
+email: office+dev@tekkie.ro
+analytics:
+  google: UA-2511156-5
 
 author:
   name: Georgiana Gligor
@@ -35,5 +37,5 @@ company:
     - { title: Consulting, description: "We assess your current issues and offer insightful advice on how to remove the pain points" }
     - { title: Prototyping, description: "We are strong believers in prototyping ideas before spending lots of money for developing them fully." }
     - { title: Maintenance, description: "We ensure you keep your costs low byoffering support and maintenance for the entire lifetime of the software we've delivered" }
-    - { title: Business Analysis, description: "Most costs can be saved by a strong initial analysis" }  
+    - { title: Business Analysis, description: "Most costs can be saved by a strong initial analysis" }
     - { title: Development, description: "Using agile practices, we ensure you get what you asked for in terms of functionality, as well as integration between various system components." }
