@@ -12,8 +12,8 @@ author:
   bio: Georgiana Gligor is an application architect that enjoys crafting efficient large-scale solutions. She has been using PHP for more than a decade, and is a living proof that geek girls are an asset to any team. She loves taming the Force of the DevOps dark side and mentoring team mates in achieving craftsmanship.
 
 # Insert your disqus shortname
-# disqus:
-#    shortname: @georgianagligor
+disqus:
+   shortname: @tekkie-1
 
 main_menu_links:
   - { title: About, href: /about/ }
