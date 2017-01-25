@@ -24,7 +24,7 @@ use:
             <h3 class="article-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ postTitle }}</a></h3>
           </div>
 
-          {% if post.meta.tags %}
+          {%- if post.meta.tags -%}
             {% for tag in post.meta.tags %}
               <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}" class="btn btn-default btn-xs"><i class="ion-ios-pricetags-outline" ></i>{{ tag }}</a>
             {% endfor %}
@@ -39,25 +39,25 @@ use:
             <a class="btn btn-primary" href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">Read more</a>
 
 
-      {% endif %}
+      {%- endif -%}
       </div>
 {% endfor %}
 
 
+{% if page.pagination.previous_page or page.pagination.next_page %}
   <div class="text-center">
-  {% if page.pagination.previous_page or page.pagination.next_page %}
       <nav class="article clearfix">
           
-      {% if page.pagination.previous_page %}
+      {%- if page.pagination.previous_page -%}
         <a class="previous" href="{{ site.url }}{{ page.pagination.previous_page.url }}" title="Previous Page"><span class="title">Previous Page</span></a>
-      {% endif %}
+      {%- endif -%}
           
-      {% if page.pagination.next_page %}
+      {%- if page.pagination.next_page -%}
         <a class="next" href="{{ site.url }}{{ page.pagination.next_page.url }}" title="Next Page"><span class="title">Next Page</span></a>
-      {% endif %}
+      {%- endif -%}
       </nav>
-  {% endif %}
   </div>
+{% endif %}
 
 </section>
 
