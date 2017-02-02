@@ -8,8 +8,11 @@ Powered by [Sculpin](http://sculpin.io).
 ## Develop
 
 ### Basic workflow
+
+Make sure you have [installed Composer](https://getcomposer.org/download/) first.
+
 ```bash
-$ vendor install
+$ composer install
 $ vendor/bin/sculpin generate --watch --server --port=12345
 ```
 The development environment is accessible at [`http://localhost:12345/`](http://localhost:12345/).
