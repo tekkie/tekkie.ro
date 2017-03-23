@@ -406,3 +406,25 @@ h1.page-header i.ion-ios-pricetags-outline {
 .big-call-to-action {
   margin: 1em 10% 3em 10%;
 }
+
+.oneservice {
+  display: inline-block;
+
+  border: 1px solid fuchsia;
+}
+
+.page-services-section {
+  .card-deck {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap; 
+    align-items: stretch;
+  }
+  .card-deck .card {
+    display: block;
+    flex-basis: 50%; /* change this value for each breakpoint*/
+    margin: 0;
+    background: inherit;
+    border: none;
+  }
+}
