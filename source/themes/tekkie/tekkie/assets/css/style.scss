@@ -384,6 +384,7 @@ h1.page-header i.ion-ios-pricetags-outline {
     max-width: 150px;
   }
   .media-body {
+    
     a {
       color: $links-color-sidebar;
     }
@@ -402,9 +403,6 @@ h1.page-header i.ion-ios-pricetags-outline {
   font-size: 25px;
   margin-right: 20px;
   transition: all .2s ease-in-out;
-}
-.big-call-to-action {
-  margin: 1em 10% 3em 10%;
 }
 
 .oneservice {
@@ -428,3 +426,5 @@ h1.page-header i.ion-ios-pricetags-outline {
     border: none;
   }
 }
+
+#page-about .container .container { width: 100%; }

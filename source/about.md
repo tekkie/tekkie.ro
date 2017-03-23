@@ -1,7 +1,8 @@
 ---
 title: About
 author: Georgiana
-layout: simple
+layout: onecolumn
+html_id: page-about
 menu_active: about
 use:
   - geeks
@@ -23,16 +24,22 @@ We embrace your project from the quality perspective. Not being biased by having
 * Next step is to automate the testing process, so that you can ensure new functionality is not breaking existing one.
 * After that, we simplify and automate delivery. Continuously knowing you're meeting your goals is our main concern.
 
-<div class="big-call-to-action">
-    <a class="btn btn-block btn-lg btn-danger" href="/contact" role="button">Talk to us</a>
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col col-lg-8 offset-lg-1">
+      <div class="w-100 mb-4 pb-4 pl-4 pr-4">
+          <a class="btn btn-block btn-lg btn-danger" href="/contact" role="button">Talk to us</a>
+      </div>
+    </div>
+  </div>
 </div>
 
 {% for geek in data.geeks %}
-<div class="media geeks">
+<div class="media geeks w-100 mb-2">
   <div class="media-left media-middle">
     <img class="media-object img-rounded" src="{{ site.url }}/avatars/{{ geek.avatar }}" />
   </div>
-  <div class="media-body">
+  <div class="media-body ml-4">
     <h2 class="media-heading">{{ geek.name }} <small>{{ geek.position }}</small></h2>
     {% if geek.linkedin %}
     <a href="{{ geek.linkedin }}"><i class="geek-icon ion-social-linkedin-outline"></i></a>

@@ -20,7 +20,7 @@
 {% block head_scripts %}{% endblock %}
 
 </head>
-<body>
+<body{% if page.html_id %} id="{{ page.html_id }}"{% endif %}>
 
 {% include "navigation" %}
 

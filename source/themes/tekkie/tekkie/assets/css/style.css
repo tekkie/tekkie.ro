@@ -450,9 +450,6 @@ h1.page-header i.ion-ios-pricetags-outline {
   margin-right: 20px;
   transition: all .2s ease-in-out; }
 
-.big-call-to-action {
-  margin: 1em 10% 3em 10%; }
-
 .oneservice {
   display: inline-block;
   border: 1px solid fuchsia; }
@@ -469,5 +466,8 @@ h1.page-header i.ion-ios-pricetags-outline {
   margin: 0;
   background: inherit;
   border: none; }
+
+#page-about .container .container {
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
