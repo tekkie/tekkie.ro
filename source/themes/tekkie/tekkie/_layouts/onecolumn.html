@@ -27,13 +27,9 @@
 <div class="mainContent container">
 
 <div class="row">
-<div class="col-lg-8">
-{% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
-</div>
 
-<div class="col-lg-4">
-{% block contentSidebar %}{% endblock %}
-</div>
+{% block content_wrapper %}{% block content %}{% endblock %}{% block items_pagination %}{% endblock %}{% endblock %}
+
 </div>
 
 </div><!-- .mainContent -->

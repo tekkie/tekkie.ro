@@ -12,29 +12,45 @@ ga('send', 'pageview');
 {% endif %}
 
 <header>
-    <div class="navbar navbar-inverse navbar-fixed-top navbar-tkc">
-        <div class="navbar-inner">
-            <div class="container">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="{{ site.url }}/">
-                    <img src="{{ site.url }}/{{ theme_path("assets/images/logomark-tekkie-white.svg") }}" />
-                    <span>{{ site.title }}</span>
-                  </a>
-                </div><!-- .navbar-header -->
-                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li{% if page.layout == 'post' or page.menu_active == 'blog' %} class="active"{% endif %}><a href="{{ site.url }}/blog">Blog</a></li>
-                        <li{% if page.menu_active == 'services' %} class="active"{% endif %}><a href="{{ site.url }}/services">Services</a></li>
-                        <li{% if page.menu_active == 'about' %} class="active"{% endif %}><a href="{{ site.url }}/about">About</a></li>
-                        <li{% if page.menu_active == 'contact' %} class="active"{% endif %}><a href="{{ site.url }}/contact">Contact</a></li>
-                    </ul>
-                </div><!--/.nav-collapse -->
-            </div>
-        </div>
-    </div>
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-inverse fixed-top navbar-tkc">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <a class="navbar-brand" href="{{ site.url }}/">
+    <img src="{{ site.url }}/{{ theme_path("assets/images/logomark-tekkie-white.svg") }}" height="32" />
+    <span>{{ site.title }}</span>
+  </a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item{% if page.layout == 'post' or page.menu_active == 'blog' %} active{% endif %}">
+        <a href="{{ site.url }}/blog" class="nav-link">
+          Blog
+          {%- if page.layout == 'post' or page.menu_active == 'blog' -%} <span class="sr-only">(current)</span>{%- endif -%}
+        </a>
+      </li>
+      <li class="nav-item{% if page.menu_active == 'services' %} active{% endif %}">
+        <a href="{{ site.url }}/services" class="nav-link">
+          Services
+          {%- if page.menu_active == 'services' -%} <span class="sr-only">(current)</span>{%- endif -%}
+        </a>
+      </li>
+      <li class="nav-item{% if page.menu_active == 'about' %} active{% endif %}">
+        <a href="{{ site.url }}/about" class="nav-link">
+          About
+          {%- if page.menu_active == 'about' -%} <span class="sr-only">(current)</span>{%- endif -%}
+        </a>
+      </li>
+      <li class="nav-item{% if page.menu_active == 'contact' %} active{% endif %}">
+        <a href="{{ site.url }}/contact" class="nav-link">
+          Contact
+          {%- if page.menu_active == 'contact' -%} <span class="sr-only">(current)</span>{%- endif -%}
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
 </header>

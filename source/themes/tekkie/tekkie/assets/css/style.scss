@@ -12,6 +12,8 @@ $screen-md-max: ($screen-lg - 1);
 body {
   font-family: Arial,lucida-sans,Helvetica,Tahoma;
   background : url('../images/background.jpg');
+  
+  padding-top: 4.5rem;
 }
 
 
@@ -45,22 +47,18 @@ footer {
         padding-top: 30px;
     }
 }
-@media (min-width: $screen-md) {
-    body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-    }
-}
 
-/** imbrincated containers should not have fixed width */
+// imbrincated containers should not have fixed width
 .container .container {
     width: auto;
 }
 
+/*------------------------- main navigation menu -------------------------*/
 .navbar-inverse {
   margin: 0px;
 }
 
-.navbar-inverse.navbar-tkc .navbar-inner {
+.navbar-inverse.navbar-tkc {
   background: #30384B;
   margin    : 0;
 }
@@ -93,9 +91,9 @@ footer {
   display   : inline;
   transition: all .5s ease-in-out;
 }
-.navbar-brand, .navbar-brand>img:hover{
-  transform: rotatez(360deg);
-}
+//.navbar-brand, .navbar-brand>img:hover{
+//  transform: rotatez(360deg);
+//}
 
 @media (max-width: $screen-sm-max) {
   .navbar .btn-navbar {
@@ -109,13 +107,15 @@ footer {
   height: inherit;
 }
 
-/* screen size needs more love */
+// screen size needs more love
 @media (min-width: $screen-md) {
   .navbar .nav {
     float : right;
     margin: 0 1em .5em 1em;
   }
 }
+
+/*-----------------------------------------*/
 
 article h2, h3 {
   font-family: "futura-pt",sans-serif;

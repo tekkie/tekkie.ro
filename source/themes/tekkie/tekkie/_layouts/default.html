@@ -37,10 +37,10 @@
 {% include "navigation" %}
         <div class="mainContent container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-lg-8">
                     {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
                 </div>
-                <div class="col-md-4 sidebar">
+                <div class="col-lg-4 sidebar">
                     {% block contentSidebar %}
                     {% if data.posts_categories %}
                     <div class="well-xs sidebar-nav">

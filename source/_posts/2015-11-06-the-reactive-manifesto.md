@@ -1,6 +1,6 @@
 ---
 title: The Reactive Manifesto
-author: Georgiana
+author: Georgiana Gligor
 layout: post
 permalink: processes/the-reactive-manifesto/
 excerpt: Check out the Reactive Manifesto for ideas on cleaner architectures. It will help you build better systems that cope with large traffic values and truly accomplish their goal.
