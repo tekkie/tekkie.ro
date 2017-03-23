@@ -426,10 +426,8 @@ article header {
   clear: both;
   margin-top: 1em; }
 
-/** blogpost meta information */
-a i.ion-ios-pricetags-outline,
-a i.ion-ios-folder-outline {
-  margin-right: .5em; }
+i.icon {
+  margin-right: .2em; }
 
 /** category and tag page header */
 h1.page-header i.ion-ios-folder-outline,

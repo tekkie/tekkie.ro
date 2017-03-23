@@ -1,31 +1,17 @@
-{% extends "default" %}
+{% extends "default_v4" %}
 
 {% block head_meta %}
     <meta name="robots" content="index, follow">
 {% endblock %}
 
 {% block content_wrapper %}
-    <article>
+    <article class="card">
 
-        <header>
-            <h1>{{ page.title }}</h1>
-        </header>
-{% if page.categories %}
-        <p class="categories">
-{% for category in page.categories %}
-            <a href="{{ site.url }}/blog/categories/{{ category|url_encode(true) }}"><i class="ion-ios-folder-outline"></i>{{ category }}</a>{% if not loop.last %}, {% endif %}
-{% endfor %}
-        </p>
-{% endif %}
-
-{% if page.tags %}
-        <p class="tags">
-{% for tag in page.tags %}
-            <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}"><i class="ion-ios-pricetags-outline"></i>{{ tag }}</a>{% if not loop.last %}, {% endif %}
-{% endfor %}
-        </p>
-{% endif %}
-        <div>{{ page.blocks.content|raw }}</div>
+    <div class="card-block">
+      <h1 class="card-title">{{ page.title }}</h4>
+      <div class="card-text">{{ page.blocks.content|raw }}</div>
+    </div>
+        
     </article>
 
 
@@ -61,17 +47,54 @@
 {% endblock %}
 
 {% block contentSidebar %}
+<div class="card">
+
+<ul class="list-group list-group-flush">
+    <li class="list-group-item">
+    {% include 'post_categories.html' with {'categories': page.categories} only %}
+    </li>
+    <li class="list-group-item">
+    {% include 'post_tags.html' with {'tags': page.tags} only %}
+    </li>
+
+    <li class="list-group-item">
+        <a class="author-name" itemprop="author"  itemscope="" itemtype="http://schema.org/Person" href="{{ site.url }}/team/georgiana-gligor/">
+        <i class="icon ion-person"></i>
+        {{ page.author }}
+        </a>
+    </li>
+    <li class="list-group-item">
+        <i class="icon ion-clock"></i>
+        <time datetime="{{ page.date|date('c') }}" pubdate>
+            <span class='month'>{{ page.date|date('M') }}</span> <span class='day'>{{ page.date|date('jS') }}</span> <span class='year'>{{ page.date|date('Y') }}</span>
+        </time>
+        </small>
+    </li>
+</ul>
+
+</div><!-- .card -->
+
 
 {% if page.previous_post or page.next_post %}
-<nav class="article">
-    <ul class="next-previous-navigation">
-        {% if page.previous_post %}
-        <li class="previous-post"><a href="{{ site.url }}{{ page.previous_post.url }}" title="{{ page.previous_post.title }}"><span class="title">{{ page.previous_post.title }}</span></a></li>
-        {% endif %}
-        {% if page.next_post %}
-        <li class="next-post"><a href="{{ site.url }}{{ page.next_post.url }}" title="{{ page.next_post.title }}"><span class="title">{{ page.next_post.title }}</span></a></li>
-        {% endif %}
-    </ul>
-</nav>
+<div class="card mt-3 p-3">
+<div class="row">
+<div class="col">
+    {%- if page.previous_post -%}
+    <a href="{{ site.url }}{{ page.previous_post.url }}" title="{{ page.previous_post.title }}" class="card-link">
+        <i class="icon ion-arrow-left-c"></i>
+        <span class="title">Older post</span>
+    </a>
+    {%- endif -%}
+</div>
+<div class="col text-right">
+    {%- if page.next_post -%}
+    <a href="{{ site.url }}{{ page.next_post.url }}" title="{{ page.next_post.title }}">
+        <span class="title">Newer post</span>
+        <i class="icon ion-arrow-right-c"></i>
+    </a>
+    {%- endif -%}
+</div>
+</div><!-- .row -->
+</div>
 {% endif %}
 {% endblock %}

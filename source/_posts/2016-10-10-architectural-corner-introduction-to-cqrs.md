@@ -23,7 +23,7 @@ CQRS is an acronym for Command-Query Responsibility Segregation. It is an archit
 
 Most components fit CRUD very well, and there is no need to bend them over to fit CQRS. Let us illustrate CRUD with a very simple component which interacts directly with the end user, and which retrieves and persists data communication with the database. You can always replace both the end-user and the persistent storage with other system components. Our CRUD example uses the Repository pattern to perform the actions, which communicate with the Model. In this case, because all behaviour is in one place, the code becomes very crowded, hard to maintain, and prone to bugs in parts of the system that you would not expect.
 
-![](/images/2016-10-10-cqrs/crud-web.jpg){.img-responsive}
+![](/images/2016-10-10-cqrs/crud-web.jpg){.img-fluid}
 
 Let us apply the segregation between Commands and Queries on a real example dealing with employees.
 
@@ -61,17 +61,17 @@ public class EmployeeWriteService {
 
 That is the most basic separation/distinction we can perform, but it is already helping us a lot. I have represented the shared-model approach in the diagram below.
 
-![](/images/2016-10-10-cqrs/shared-model-web.jpg){.img-responsive}
+![](/images/2016-10-10-cqrs/shared-model-web.jpg){.img-fluid}
 
 The beauty of using distinct services for queries and commands is that it makes the code flexible enough to handle different models as well. Imagine how elegant your reading Model can be just because you took out all the write concerns. Similarly, for the write Model, isn't it becoming much cleaner when you do not have to deal with the data reading aspects?
 
-![](/images/2016-10-10-cqrs/separate-models-web.jpg){.img-responsive}
+![](/images/2016-10-10-cqrs/separate-models-web.jpg){.img-fluid}
 
 Let us take this one step further and completely separate the database: write in one database where data consistency is met, and read from another that is eventually consistent, but optimised for reading. Please observe how, on the right-hand side of the diagram, we took out any reference to Model. Please notice that we are retrieving DTOs directly from the Query services.
 
 There is an added concept of Facade, quite common in today's architectures, which helps us separate the boundaries in a much cleaner way.
 
-![](/images/2016-10-10-cqrs/cqrs-full-web.jpg){.img-responsive}
+![](/images/2016-10-10-cqrs/cqrs-full-web.jpg){.img-fluid}
 
 ## Benefits
 
