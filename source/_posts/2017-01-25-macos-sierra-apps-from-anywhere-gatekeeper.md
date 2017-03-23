@@ -3,7 +3,7 @@ title: Disable Gatekeeper to Allow Applications from Anywhere in macOS Sierra
 author: Georgiana
 layout: post
 permalink: quick-n-dirty/disable-gatekeeper-allow-applications-anywhere-macos-sierra/
-excerpt: CQRS is an acronym for Command-Query Responsibility Segregation. It is an architectural pattern first discussed by Greg Young in 2010. It suggests splitting the responsibilities of reading and writing data into completely different objects. This opposes the well-known CRUD approach.
+excerpt: To install a macOS application from outside App store and identified developers, Gatekeeper changes are required.
 categories:
   - Quick and dirty
 tags:
