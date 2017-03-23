@@ -1,15 +1,18 @@
 ---
 title: Contact
+subtitle: Here is how you can get in touch with us.
 author: Georgiana
 menu_active: contact
 layout: default-with-map
 ---
-<section class="section-contact">
-  <div class="container">
-  <div class="section-intro">
-    <h2 class="section-intro-title">{{page.title}}</h2>
-    <div class="section-summary"><p>Here is how you can get in touch with us.</p></div>
-  </div>
+
+<div class="w-100 text-center mt-4 pt-4">
+  <h2 class="section-intro-title">{{ page.title }}</h2>
+  <p>{{ page.subtitle }}</p>
+</div>
+
+  <div class="row">
+
     <div class="col-md-4 text-center margin-bottom">
         <i class="contact-icon ion-ios-location-outline"></i>
         <div class="organization-name">Tekkie Consulting</div>
@@ -24,10 +27,9 @@ layout: default-with-map
     </div>
     <div class="col-md-4 text-center margin-bottom">
         <i class="contact-icon ion-ios-person-outline"></i>
-          <div><a class="fn url" href="http://gb.tekkie.ro/">Georgiana Gligor</a>,<br> CEO of   <span class="org vcard"><span class="url fn org" rel="group">Tekkie Consulting</span></span></div>
+          <div><a class="fn url" href="https://tekkie.me/">Georgiana Gligor</a>,<br> CEO of   <span class="org vcard"><span class="url fn org" rel="group">Tekkie Consulting</span></span></div>
           <dd><a href="skype:georgiana.beju?chat">Chat on Skype</a></dd>
     </div>
   </div>
 
-  <div class="container"><div id="map"></div></div>
-</section>
+<div class="container"><div id="map"></div></div>
