@@ -1,9 +1,11 @@
 ---
 name: Georgiana Gligor
 author: Georgiana
-layout: post
+layout: geek
 permalink: team/georgiana-gligor/
 avatar: georgiana-gligor.jpg
+joined: 2011-08-08
+menu_active: about
 position: Chief Tekkie Officer
 tags:
   - DevOps
@@ -15,6 +17,7 @@ linkedin: http://ro.linkedin.com/in/gbtekkie
 twitter: https://twitter.com/gbtekkie
 facebook: https://www.facebook.com/gbtekkie
 skype: skype:georgiana.beju?chat
+html_id: page-geek
 ---
 My name is Georgiana Gligor, and I am crafting professional software since 2003. I am a geek, a mother, and a do-er. I am in the software business because I want to make our lives better, simpler, more efficient.
 

@@ -1,6 +1,6 @@
 ---
 title: Disable Gatekeeper to Allow Applications from Anywhere in macOS Sierra
-author: Georgiana
+author: Georgiana Gligor
 layout: post
 permalink: quick-n-dirty/disable-gatekeeper-allow-applications-anywhere-macos-sierra/
 excerpt: To install a macOS application from outside App store and identified developers, Gatekeeper changes are required.
@@ -34,7 +34,7 @@ assessments disabled
 
 As can be seen in the screenshot below, 
 
-![](/images/2017-01-25-macos-security/security-and-privacy-macos.jpg){.img-responsive}
+![](/images/2017-01-25-macos-security/security-and-privacy-macos.jpg){.img-fluid}
 
 , my full control over which apps are allowed is now back in my hands.
 

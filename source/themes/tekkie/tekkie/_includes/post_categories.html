@@ -1,0 +1,7 @@
+{% if categories %}
+{% for category in categories %}
+<a href="{{ site.url }}/blog/categories/{{ category|url_encode(true) }}">
+	<i class="icon ion-ios-folder-outline"></i>
+	{{ category }}</a>{% if not loop.last %},&nbsp;{% endif %}
+{% endfor %}
+{% endif %}

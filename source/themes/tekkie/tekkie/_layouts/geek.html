@@ -1,0 +1,34 @@
+{% extends "default_v4" %}
+
+{% block post_title %}
+<h1 class="card-title">{{ page.name }}</h1>
+<hr />
+{% endblock post_title %}
+
+{% block contentSidebar %}
+<div class="card">
+  <img class="card-img-top mt-2 mb-2" src="{{ site.url }}/avatars/{{ page.avatar }}" alt="{{ page.name }}">
+  
+
+<ul class="list-group list-group-flush">
+
+    <li class="list-group-item">
+    {% include 'post_tags.html' with {'tags': page.tags} only %}
+    </li>
+
+    <li class="list-group-item">
+        <i class="icon ion-clock"></i>
+        
+        {% set daysAgo = date(page.joined|date('Y/m/d')).diff(date('now'|date('Y/m/d'))).days %}
+        
+        
+        <time datetime="{{ page.date|date('c') }}" pubdate>
+            {% if 0 == daysAgo %}Today{% elseif 1 == daysAgo %}Yesterday{% else %}{{ daysAgo }} days ago{% endif %}
+        </time>
+        </small>
+    </li>
+</ul>
+
+</div><!-- .card -->
+
+{% endblock contentSidebar %}

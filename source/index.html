@@ -1,5 +1,6 @@
 ---
-layout: simple
+layout: onecolumn
+html_id: page-home
 title: Home
 generator: pagination
 pagination:
@@ -27,23 +28,26 @@ use:
           <div class="company-summary"><p>{{ site.company.summary }}</p></div>
         </div>
 
-      <a href="{{ site.url }}/services" role="button" class="btn btn-lg intro-cta-button btn-primary">Check out more <span aria-hidden="true"></span></a>
+      <a href="{{ site.url }}/services" role="button" class="btn btn-lg intro-cta-button btn-danger">Check out more <span aria-hidden="true"></span></a>
 
       </div>
   </section><!-- end intro img -->
-  <section class="services-section">
+  <div class="row services-section">
+    <div class="section-intro">
+      <h2 class="section-intro-title">What we do</h2>
+      <div class="section-summary"><p>Tekkie Consulting offers the following high quality services.</p></div>
+    </div>
+    
     <div class="container">
-      <div class="section-intro">
-        <h2 class="section-intro-title">What we do</h2>
-        <div class="section-summary"><p>Tekkie Consulting offers the following high quality services.</p></div>
-      </div>
+      <div class="row">
       {% for service in site.company.services %}
-          <div class="col-md-3 col-sm-3 col-xs-6 margin-bottom text=center">
+          <div class="col col-lg-3 col-md-3 col-sm-6 col-xs-6 margin-bottom text=center">
             <h4 class="text-center service-text {{service.title}}">{{ service.title }}</h4>
           </div>
       {% endfor %}
+      </div>
     </div>
-  </section>
+  </div>
 
 
 <section class="section-blog-posts">
@@ -52,33 +56,50 @@ use:
       <h2 class="section-intro-title">From our blog</h2>
       <div class="section-summary"><p>The latest news from our blog. Happy reading.</p></div>
     </div>
+
+
+<div class="card-group">
+
 {% for post in page.pagination.items %}
 {% set postTitle = post.title %}
-    <div class="col-md-4 clear">
-      {% if postTitle|length < post.title|length %}{% set postTitle = postTitle ~ "..." %}{% endif %}
-
-          <div class="post-title">
-            <h3 class="article-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ postTitle }}</a></h3>
-          </div>
-
-          {% if post.meta.tags %}
-            {% for tag in post.meta.tags %}
-              <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}" class="btn btn-default btn-xs"><i class="ion-ios-pricetags-outline" ></i>{{ tag }}</a>
-            {% endfor %}
-
-            {% if post.excerpt %}
-              <div class="post-excerpt">
-                <p class="fp-excerpt">{{ post.excerpt }}</p>
-              </div>
-            {% else %}
-              <p class="fp-content">{{ post.blocks.content|raw[0:100] }}</p>
-            {% endif %}
-            <a class="btn btn-primary" href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">Read more</a>
-
-
+{% if postTitle|length > site.posts.title.shorten %}{% set postTitle = postTitle[:site.posts.title.shorten] ~ "..." %}{% endif %}
+  <div class="card pl-2 pr-2">
+    <!-- <img class="card-img-top" src="http://placehold.it/350x150" alt="Card image cap"> -->
+    <div class="card-block">
+      <h4 class="card-title post-title">
+        <a href="{{ site.url }}{{ post.url }}">{{ postTitle }}</a>
+      </h4>
+      {% if post.excerpt %}
+      <p class="card-text">{{ post.excerpt }}</p>
+      {% else %}
+      <p class="card-text">{{ post.blocks.content|raw[0:100] }}</p>
       {% endif %}
-      </div>
+    </div>
+    <div class="card-footer">
+      <p class="card-text">
+        
+    </p>
+    </div>
+{% if post.meta.tags %}
+    <div class="card-footer m-0 p-0 text-center">
+    <p class="card-text">
+{% for tag in post.meta.tags %}
+      <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}" class="btn btn-default btn-xs">
+        <i class="ion-ios-pricetags-outline" ></i>{{ tag }}
+      </a>
 {% endfor %}
+        <small class="text-muted">
+
+        {% set daysAgo = date(post.date|date('Y/m/d')).diff(date('now'|date('Y/m/d'))).days %}
+        {% if 0 == daysAgo %}Today{% elseif 1 == daysAgo %}Yesterday{% else %}{{ daysAgo }} days ago{% endif %}
+      </small>
+    </p>
+    </div>
+{% endif %}
+  </div>
+{% endfor %}
+</div>
+
 </div>
 </section>
 {% endblock %}

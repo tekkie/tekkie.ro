@@ -1,6 +1,7 @@
 body {
   font-family: Arial,lucida-sans,Helvetica,Tahoma;
-  background: url("../images/background.jpg"); }
+  background: url("../images/background.jpg");
+  padding-top: 4.5rem; }
 
 h4 small {
   display: block;
@@ -23,18 +24,14 @@ footer .container {
 @media (max-width: 991px) {
   .sidebar {
     padding-top: 30px; } }
-@media (min-width: 992px) {
-  body {
-    padding-top: 60px;
-    /* 60px to make the container go all the way to the bottom of the topbar */ } }
-/** imbrincated containers should not have fixed width */
 .container .container {
   width: auto; }
 
+/*------------------------- main navigation menu -------------------------*/
 .navbar-inverse {
   margin: 0px; }
 
-.navbar-inverse.navbar-tkc .navbar-inner {
+.navbar-inverse.navbar-tkc {
   background: #30384B;
   margin: 0; }
 
@@ -62,9 +59,6 @@ footer .container {
   display: inline;
   transition: all .5s ease-in-out; }
 
-.navbar-brand, .navbar-brand > img:hover {
-  transform: rotatez(360deg); }
-
 @media (max-width: 991px) {
   .navbar .btn-navbar {
     display: inline-block;
@@ -73,11 +67,11 @@ footer .container {
 .navbar .navbar-brand {
   height: inherit; }
 
-/* screen size needs more love */
 @media (min-width: 992px) {
   .navbar .nav {
     float: right;
     margin: 0 1em .5em 1em; } }
+/*-----------------------------------------*/
 article h2, h3 {
   font-family: "futura-pt",sans-serif;
   font-weight: 700;
@@ -228,13 +222,9 @@ footer a:hover {
   content: "."; }
 
 .intro-cta-button {
-  background-color: #30384B;
   border: none;
   margin-top: 30px;
   transition: all .1s ease-in-out; }
-
-.intro-cta-button:hover {
-  background-color: #1c202b; }
 
 /* Homepage services section */
 .services-section {
@@ -426,10 +416,8 @@ article header {
   clear: both;
   margin-top: 1em; }
 
-/** blogpost meta information */
-a i.ion-ios-pricetags-outline,
-a i.ion-ios-folder-outline {
-  margin-right: .5em; }
+i.icon {
+  margin-right: .2em; }
 
 /** category and tag page header */
 h1.page-header i.ion-ios-folder-outline,
@@ -445,12 +433,13 @@ h1.page-header i.ion-ios-pricetags-outline {
     font-size: large; }
   .media.geeks .media-object {
     max-width: 150px; }
-  .media.geeks .media-body a {
-    color: #3D5899; }
-  .media.geeks .media-body div {
-    display: inline-block;
+  .media.geeks .media-body {
     padding-right: 1em; }
-    .media.geeks .media-body div i {
+    .media.geeks .media-body a {
+      color: #3D5899; }
+    .media.geeks .media-body div {
+      display: inline-block; }
+    .media.geeks .media-body i {
       padding-right: .5em; }
 
 .geek-icon {
@@ -458,7 +447,42 @@ h1.page-header i.ion-ios-pricetags-outline {
   margin-right: 20px;
   transition: all .2s ease-in-out; }
 
-.big-call-to-action {
-  margin: 1em 10% 3em 10%; }
+.oneservice {
+  display: inline-block;
+  border: 1px solid fuchsia; }
+
+.page-services-section .card-deck {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  align-items: stretch; }
+.page-services-section .card-deck .card {
+  display: block;
+  flex-basis: 50%;
+  /* change this value for each breakpoint*/
+  margin: 0;
+  background: inherit;
+  border: none; }
+
+#page-about .container .container {
+  width: 100%; }
+
+#page-home .card-title a, #page-home .card-title a:hover {
+  text-decoration: none; }
+#page-home .card {
+  background-color: #f2f2f2;
+  border: none; }
+#page-home .card-footer, #page-home .card-footer a {
+  background: inherit;
+  border: none; }
+
+article.card {
+  background: inherit;
+  border: none; }
+
+#page-geek .card-img-top {
+  height: 250px;
+  width: 250px;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */

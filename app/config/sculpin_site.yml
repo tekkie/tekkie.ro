@@ -6,6 +6,11 @@ subtitle: Think. Discover. Design. Develop.
 email: office+dev@tekkie.ro
 analytics:
   google: UA-2511156-5
+maps_key: AIzaSyCnYexG1baJuF81957Mxn7LgimbeYXL9cE
+
+posts:
+  title:
+    shorten: 45 # how many chars sto show on homepage
 
 author:
   name: Georgiana Gligor

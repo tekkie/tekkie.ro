@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: onecolumn
 title: Blog Posts Category
 generator: [posts_category_index, pagination]
 pagination:
@@ -20,13 +20,22 @@ menu_active: 'blog'
 {% set year = '0' %}
 <div class="container">
 <header class="page-header">
-  <h1 class="page-header"><i class="ion-ios-folder-outline"></i>{{ page.category }}</h1>
+  <h1 class="page-header">
+    <i class="ion-ios-folder-outline"></i>{{ page.category }}
+  </h1>
   <div class="taxonomy-description">
     There are {{ page.pagination.total_items }} posts filled in <strong>{{ page.category }}</strong>{% if page.pagination.previous_page or page.pagination.next_page %} (this is page <strong>{{ page.pagination.page }}</strong> of <strong>{{ page.pagination.total_pages }}</strong>){% endif %}.
   </div>
 </header>
 
+{% set shouldOpenMonth = true %}
+{% set shouldCloseMonth = false %}
+{% set justStarted = true %}
+
+<div class="card-columns">
+
 {% for post in page.pagination.items %}
+
 {% set this_year %}{{ post.date | date("Y") }}{% endset %}
 {% if year != this_year %}
   {% set month = '0' %}
@@ -35,35 +44,60 @@ menu_active: 'blog'
 {% set this_month %}{{ post.date | date("F") }}{% endset %}
 {% if month != this_month %}
   {% set month = this_month %}
-  <h3>{{ month }} {{ year }}</h3>
+  {% set shouldOpenMonth = true %}
+  {% if justStarted %}{% set shouldCloseMonth = false %}{% set justStarted = false %}{% else %}{% set shouldCloseMonth = true %}{% endif %}
+{% else %}
+  {% set shouldOpenMonth = false %}
+  {% set shouldCloseMonth = false %}
 {% endif %}
-<article>
-  <div><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></div>
-</article>
+
+  {% if shouldCloseMonth == true %}
+
+    </ul>
+  </div>
+  {% endif %}
+
+{% if shouldOpenMonth == true %}
+  <div class="card m-2">
+    <div class="card-block">
+      <h3 class="card-title">{{ month }} {{ year }}</h3>
+    </div>
+
+    <ul class="list-group list-group-flush">
+{% endif %}
+      <li class="list-group-item">
+        <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+      </li>
+
 {% endfor %}
 
-
+</div>
 </div>
 {% endblock content %}
 
 
-{% block contentSidebar %}
-<div>
-    {% if page.pagination.previous_page or page.pagination.next_page %}
-    <nav class="article clearfix">
-        <ul class="next-previous-navigation">
-            {% if page.pagination.previous_page %}
-            <li class="previous-post">
-                <a href="{{ site.url }}{{ page.pagination.previous_page.url }}" title="Previous Page">Previous Page</a>
-            </li>
-            {% endif %}
-            <li class="next-post">
-                {% if page.pagination.next_page %}
-                <a class="next" href="{{ site.url }}{{ page.pagination.next_page.url }}" title="Next Page">Next Page</a>
-                {% endif %}
-            </li>
-        </ul>
-    </nav>
-    {% endif %}
+{% block items_pagination %}
+{%- if page.pagination.previous_page or page.pagination.next_page -%}
+<div class="card mt-3 mb-4 p-3">
+<div class="row">
+<div class="col">
+    {%- if page.pagination.previous_page -%}
+    <a href="{{ site.url }}{{ page.pagination.previous_page.url }}" title="{{ page.previous_post.title }}" class="card-link">
+        <i class="icon ion-arrow-left-c"></i>
+        <span class="title">Newer items</span>
+    </a>
+    {%- endif -%}
 </div>
-{% endblock contentSidebar %}
+<div class="col text-right">
+    {%- if page.pagination.next_page -%}
+    <a href="{{ site.url }}{{ page.pagination.next_page.url }}" title="{{ page.next_post.title }}">
+        <span class="title">Older items</span>
+        <i class="icon ion-arrow-right-c"></i>
+    </a>
+    {%- endif -%}
+</div>
+</div><!-- .row -->
+</div>
+{%- endif -%}
+
+{% endblock items_pagination %}

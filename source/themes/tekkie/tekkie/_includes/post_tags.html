@@ -1,0 +1,9 @@
+{% if tags %}
+{% for tag in tags %}
+<a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">
+	<i class="icon ion-ios-pricetags-outline"></i>
+	{{ tag }}
+</a>
+{%- if not loop.last -%},&nbsp;{%- endif -%}
+{% endfor %}
+{% endif %}

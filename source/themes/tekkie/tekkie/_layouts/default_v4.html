@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+  {% include 'head_meta' only %}
+
+  <title>{% block title %}{{ page.title }}{% endblock %}
+{%- if page.layout == 'post' or page.menu_active == 'blog' -%}
+ &mdash; Tekkie Consulting Blog
+{%- else -%}
+ &mdash; {{ site.title }} &mdash; {{ site.subtitle }}
+{%- endif -%}
+</title>
+
+{% block head_meta %}{% endblock %}
+{% block meta %}{% endblock %}
+
+{% include 'head_styles' only %}
+
+{% block head_styles %}{% endblock %}
+{% block head_scripts %}{% endblock %}
+
+</head>
+<body{% if page.html_id %} id="{{ page.html_id }}"{% endif %}>
+
+{% include "navigation" %}
+
+<div class="mainContent container">
+
+<div class="row">
+<div class="col-lg-8">
+{% block post_title %}{% endblock post_title %}
+{% block content %}{% endblock %}
+</div>
+
+<div class="col-lg-4">
+{% block contentSidebar %}{% endblock %}
+</div>
+</div>
+
+</div><!-- .mainContent -->
+
+{% include "footer" %}
+{% include "footer_scripts" %}
+
+</body>
+</html>

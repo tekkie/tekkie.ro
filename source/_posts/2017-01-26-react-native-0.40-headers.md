@@ -1,6 +1,6 @@
 ---
 title: Support React Native 0.40 iOS Headers
-author: Georgiana
+author: Georgiana Gligor
 layout: post
 permalink: quick-n-dirty/support-react-native-0.40-ios-headers/
 excerpt: React Native 0.40 introduces a breaking change for iOS. Find out how to mitigate this in your current projects.
@@ -48,11 +48,11 @@ and don't miss any steps.
 Our first problem was [`react-native-sqlite-storage`][src-sqlite-storage], and 
 we were happy to find that they already merged a pull request to fix the problem:
 
-![](/images/2017-01-26-react-native/react-native-sqlite-storage.jpg){.img-responsive}
+![](/images/2017-01-26-react-native/react-native-sqlite-storage.jpg){.img-fluid}
 
 But, unfortunately, it was not part of a stable release,
 
-![](/images/2017-01-26-react-native/react-native-sqlite-storage-unstable.jpg){.img-responsive}
+![](/images/2017-01-26-react-native/react-native-sqlite-storage-unstable.jpg){.img-fluid}
 
 So we had to point our dependency to the `master` branch (typically considered 
 unstable) until a new stable release would be issued. This meant editing `package.json` 
