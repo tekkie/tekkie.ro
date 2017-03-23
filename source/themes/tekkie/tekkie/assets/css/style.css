@@ -476,4 +476,13 @@ h1.page-header i.ion-ios-pricetags-outline {
   background: inherit;
   border: none; }
 
+article.card {
+  background: inherit;
+  border: none; }
+
+#page-geek .card-img-top {
+  height: 250px;
+  width: 250px;
+  margin: 0 auto; }
+
 /*# sourceMappingURL=style.css.map */

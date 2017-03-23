@@ -20,7 +20,7 @@
 {% block head_scripts %}{% endblock %}
 
 </head>
-<body>
+<body{% if page.html_id %} id="{{ page.html_id }}"{% endif %}>
 
 {% include "navigation" %}
 
@@ -28,7 +28,8 @@
 
 <div class="row">
 <div class="col-lg-8">
-{% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
+{% block post_title %}{% endblock post_title %}
+{% block content %}{% endblock %}
 </div>
 
 <div class="col-lg-4">

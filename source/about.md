@@ -40,7 +40,11 @@ We embrace your project from the quality perspective. Not being biased by having
     <img class="media-object img-rounded" src="{{ site.url }}/avatars/{{ geek.avatar }}" />
   </div>
   <div class="media-body ml-4">
-    <h2 class="media-heading">{{ geek.name }} <small>{{ geek.position }}</small></h2>
+    <h2 class="media-heading">
+      <a href="{{ geek.url }}">
+      {{ geek.name }} <small>{{ geek.position }}</small>
+      </a>
+    </h2>
     {% if geek.linkedin %}
     <a href="{{ geek.linkedin }}"><i class="geek-icon ion-social-linkedin-outline"></i></a>
     {% endif %}
