@@ -11,3 +11,6 @@ s3.conf
 
 config.codekit*
 **/.sass-cache/
+
+# IDE related
+.idea/
