@@ -14,3 +14,7 @@ config.codekit*
 
 # IDE related
 .idea/
+
+semantic/
+node_modules/
+source/themes/tekkie/tekkie-semantic/assets/

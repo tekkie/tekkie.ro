@@ -34,7 +34,7 @@ assessments disabled
 
 As can be seen in the screenshot below, 
 
-![](/images/2017-01-25-macos-security/security-and-privacy-macos.jpg){.img-fluid}
+![](/images/2017-01-25-macos-security/security-and-privacy-macos.jpg){.ui .fluid .image}
 
 , my full control over which apps are allowed is now back in my hands.
 

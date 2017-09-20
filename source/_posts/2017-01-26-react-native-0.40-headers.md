@@ -48,11 +48,11 @@ and don't miss any steps.
 Our first problem was [`react-native-sqlite-storage`][src-sqlite-storage], and 
 we were happy to find that they already merged a pull request to fix the problem:
 
-![](/images/2017-01-26-react-native/react-native-sqlite-storage.jpg){.img-fluid}
+![](/images/2017-01-26-react-native/react-native-sqlite-storage.jpg){.ui .fluid .image}
 
 But, unfortunately, it was not part of a stable release,
 
-![](/images/2017-01-26-react-native/react-native-sqlite-storage-unstable.jpg){.img-fluid}
+![](/images/2017-01-26-react-native/react-native-sqlite-storage-unstable.jpg){.ui .fluid .image}
 
 So we had to point our dependency to the `master` branch (typically considered 
 unstable) until a new stable release would be issued. This meant editing `package.json` 

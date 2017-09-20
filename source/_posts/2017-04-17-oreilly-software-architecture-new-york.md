@@ -16,7 +16,7 @@ I always get drowned in work after returning from a conference, and forget blogg
 reason for this post being the first of its kind on this blog. I promise it will not be the last, as in the past year 
 and half I've spoken at a lot of great events that should be shared with our fellow tekkies.
 
-![](/images/2017-04-17-oreilly-sa-ny/welcome.jpg){.img-fluid}
+![](/images/2017-04-17-oreilly-sa-ny/welcome.jpg){.ui .fluid .image}
 
 If you've been to tech conferences lately, you might have noticed there are some topics that tend to repeat themselves. 
 Almost all are tightly related to tools and tooling, and very few are aiming to address the techniques and 
@@ -51,7 +51,7 @@ taking advantage of. [Slides are online][talk-slides] and I will be happy to con
 you are interested.
 
 ## The Architectural Katas
-![](/images/2017-04-17-oreilly-sa-ny/architectural-katas.jpg){.img-fluid}
+![](/images/2017-04-17-oreilly-sa-ny/architectural-katas.jpg){.ui .fluid .image .large .centered}
 
 If you've never played architectural katas before, I wholeheartedly recommend this exercise. There were so many people 
 wanting to attend and so few boards, that people were sprinting towards the boards, so I had to just watch teams solve 
