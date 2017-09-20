@@ -3,6 +3,7 @@
 # in a template to get the contents of the `title` key.
 title: Tekkie Consulting
 subtitle: Think. Discover. Design. Develop.
+feed_author: Tekkie Consulting
 email: office+dev@tekkie.ro
 analytics:
   google: UA-2511156-5

@@ -9,9 +9,9 @@ permalink: atom.xml
     <link href="{{ site.url }}/"/>
     <updated>{{ site.calculated_date | date('c') }}</updated>
     <id>{{ site.url }}/</id>
-    {% if site.author or site.email %}
+    {% if site.feed_author or site.email %}
         <author>
-            {% if site.author %}<name><![CDATA[{{ site.author }}]]></name>{% endif %}
+            {% if site.feed_author %}<name><![CDATA[{{ site.feed_author }}]]></name>{% endif %}
             {% if site.email %}<email><![CDATA[{{ site.email }}]]></email>{% endif %}
         </author>
     {% endif %}
