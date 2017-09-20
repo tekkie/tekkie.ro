@@ -8,7 +8,7 @@ use:
   - geeks
 
 ---
-
+{% block content %}
 <div class="ui vertical stripe text segment">
     <h1>Helping companies since 2011</h1>
     <p>
@@ -45,7 +45,7 @@ use:
             </a>
         </div>
         <div class="image">
-          <img class="media-object img-rounded" src="{{ site.url }}/avatars/{{ geek.avatar }}" />
+          <img src="//via.placeholder.com/250?text=mistery+tekkie" data-src="{{ site.url }}/avatars/{{ geek.avatar }}" />
         </div>
         <div class="extra centered content">
           {% if geek.linkedin %}
@@ -65,3 +65,16 @@ use:
     {% endfor %}
     </div><!-- .cards -->
 </div>
+{% endblock %}
+
+{% block javascripts %}
+<script type="text/javascript">
+    $('.ui.centered.cards img')
+        .visibility({
+            type       : 'image',
+            transition : 'fade in',
+            duration   : 1000
+        })
+    ;
+</script>
+{% endblock %}

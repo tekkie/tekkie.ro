@@ -2,7 +2,7 @@
 
 <html>
 <head>
-  {#{% include 'head_meta' only %}#}
+    <link rel="shortcut icon" href="{{ site.url }}/themes/tekkie/tekkie-semantic/assets/images/favicon.ico">
 
   <title>{% block title %}{{ page.title }}{% endblock %}
 {%- if page.layout == 'post' or page.menu_active == 'blog' -%}
@@ -19,7 +19,7 @@
 
 <body{% if page.html_id %} id="{{ page.html_id }}"{% endif %}>
 
-{% include "navigation" %}
+{% include "navigation" with { 'style': 'ui top fixed inverted massive pointing menu', 'logo': 'logomark-tekkie-white.svg' } %}
 
 <div class="ui main container">
 {%- block content_wrapper -%}
@@ -32,5 +32,6 @@
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+{% block javascripts %}{% endblock %}
 </body>
 </html>

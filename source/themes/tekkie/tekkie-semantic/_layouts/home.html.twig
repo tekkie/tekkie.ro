@@ -2,43 +2,60 @@
 
 <html>
 <head>
-  {#{% include 'head_meta' only %}#}
+    <link rel="shortcut icon" href="{{ site.url }}/themes/tekkie/tekkie-semantic/assets/images/favicon.ico">
 
-  <title>{% block title %}{{ page.title }}{% endblock %}
-{%- if page.layout == 'post' or page.menu_active == 'blog' -%}
- &mdash; Tekkie Consulting Blog
-{%- else -%}
- &mdash; {{ site.title }} &mdash; {{ site.subtitle }}
-{%- endif -%}
-</title>
+    <title>{% block title %}{{ page.title }}{% endblock %}
+        {%- if page.layout == 'post' or page.menu_active == 'blog' -%}
+            &mdash; Tekkie Consulting Blog
+        {%- else -%}
+            &mdash; {{ site.title }} &mdash; {{ site.subtitle }}
+        {%- endif -%}
+    </title>
 
-    <link rel="stylesheet" href="{{ site.url }}/themes/tekkie/tekkie-semantic/assets/css/semantic.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css" />
+    <link rel="stylesheet" href="{{ site.url }}/themes/tekkie/tekkie-semantic/assets/css/semantic-overrides.css" />
 
 </head>
 
 <body{% if page.html_id %} id="{{ page.html_id }}"{% endif %}>
 
-{% include "navigation" %}
+{% include "navigation" with { 'style': 'ui large top fixed hidden menu', 'logo': 'logo-tekkie-consulting-small.jpg' } %}
 
-<div class="ui main container">
-{%- block content_wrapper -%}
-
-    <div class="ui divided grid">
-        <div class="twelve wide column">
-            {% block post_title %}{% endblock post_title %}
-            {% block content %}{% endblock %}
-            {% block items_pagination %}{% endblock %}
-        </div>
-
-        <div class="four wide column">
-            {% block contentSidebar %}{% endblock %}
-        </div>
-    </div>
-{%- endblock -%}
+<div class="pusher">
+    {%- block content_wrapper -%}
+        {% block content %}{% endblock %}
+    {%- endblock -%}
 
 </div><!-- .mainContent -->
 
 {% include "footer" %}
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+<script type="text/javascript">
+$(document)
+    .ready(function() {
+
+        // fix menu when passed
+        $('.masthead')
+            .visibility({
+                once: false,
+                onBottomPassed: function() {
+                    $('.fixed.menu').transition('fade in');
+                },
+                onBottomPassedReverse: function() {
+                    $('.fixed.menu').transition('fade out');
+                }
+            })
+        ;
+
+        // create sidebar and attach to menu open
+        $('.ui.sidebar')
+            .sidebar('attach events', '.toc.item')
+        ;
+
+    })
+;
+</script>
 </body>
 </html>
