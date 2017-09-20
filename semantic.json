@@ -1,0 +1,22 @@
+{
+  "base": "semantic/",
+  "paths": {
+    "source": {
+      "config": "src/theme.config",
+      "definitions": "src/definitions/",
+      "site": "src/site/",
+      "themes": "src/themes/"
+    },
+    "output": {
+      "packaged": "../source/themes/tekkie/tekkie-semantic/assets/css/",
+      "uncompressed": "../source/themes/tekkie/tekkie-semantic/assets/css/components/",
+      "compressed": "../source/themes/tekkie/tekkie-semantic/assets/css/components/",
+      "themes": "../source/themes/tekkie/tekkie-semantic/assets/css/themes/"
+    },
+    "clean": "../source/themes/tekkie/tekkie-semantic/assets/css/"
+  },
+  "permission": false,
+  "autoInstall": false,
+  "rtl": false,
+  "version": "2.2.13"
+}

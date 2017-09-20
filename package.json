@@ -1,0 +1,27 @@
+{
+  "name": "tekkie.ro",
+  "version": "1.0.0",
+  "description": "Tekkie Consulting website",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "semantic-ui": "^2.2.13"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tekkie/tekkie.ro-src.git"
+  },
+  "keywords": [
+    "tekkie",
+    "Georgiana Gligor"
+  ],
+  "author": "The Tekkies <team@tekkie.us>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/tekkie/tekkie.ro-src/issues"
+  },
+  "homepage": "https://github.com/tekkie/tekkie.ro-src#readme"
+}

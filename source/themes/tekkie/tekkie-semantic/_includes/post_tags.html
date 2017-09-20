@@ -1,0 +1,7 @@
+{% if tags %}
+{% for tag in tags %}
+<a class="ui tag label" href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">
+	{{ tag }}
+</a>
+{% endfor %}
+{% endif %}

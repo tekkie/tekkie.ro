@@ -1,0 +1,55 @@
+{% extends "onecolumn" %}
+
+{% block post_title %}
+
+{%- for category in page.categories -%}
+<a class="ui orange right ribbon label"
+   href="{{ site.url }}/blog/categories/{{ category|url_encode(true) }}">
+    {{ category }}
+</a>
+{%- endfor -%}
+<h1 class="ui header">{{ page.title }}</h1>
+
+<div class="ui grid">
+    <div class="three column row">
+        <div class="left floated column">
+            <a class="author-name" itemprop="author"  itemscope="" itemtype="http://schema.org/Person" href="{{ site.url }}/team/georgiana-gligor/">
+                <img class="ui right spaced avatar image" src="/avatars/georgiana-gligor.jpg">
+                {{ page.author }}
+            </a>
+        </div>
+        <div class="right floated column">
+            {% include 'post_tags.html' with {'tags': page.tags} only %}
+        </div>
+    </div>
+</div>
+
+{% endblock post_title %}
+
+{% block items_pagination %}
+<div class="ui clearing">
+    <div class="ui left floated header">
+        {%- if page.previous_post -%}
+            <a href="{{ site.url }}{{ page.previous_post.url }}" title="{{ page.previous_post.title }}">
+                <i class="chevron left icon"></i>
+                (Older) {{ page.previous_post.title }}
+            </a>
+        {%- endif -%}
+    </div>
+    <div class="ui right floated header">
+        {%- if page.next_post -%}
+            <a href="{{ site.url }}{{ page.next_post.url }}" title="{{ page.next_post.title }}">
+                {{ page.next_post.title }} (Newer)
+                <i class="chevron right icon"></i>
+            </a>
+        {%- endif -%}
+    </div>
+</div>
+{% endblock %}
+
+
+{% block contentSidebar %}
+    <div class="card">
+        company CTA
+    </div>
+{% endblock contentSidebar %}
