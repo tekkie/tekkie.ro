@@ -1,0 +1,101 @@
+---
+title: Services
+subtitle: Our expertise put to practice.
+author: Georgiana
+layout: basic
+menu_active: services
+html_id: page-services
+---
+
+<div class="ui vertical stripe segment">
+    <div class="ui equal width stackable internally celled grid">
+        <div class="middle aligned row">
+            <div class="center aligned column">
+                <a class="ui red huge button" href="/contact" role="button">
+                    <i class="ui checked calendar icon"></i>
+                    Test-drive it!
+                </a>
+            </div>
+            <div class="left aligned column">
+                <h1>We use an integrated approach on new projects</h1>
+                <p>
+                Over time we developed an integrated approach that we use on each new project. We could never live without:
+                </p>
+                <div class="ui list">
+                    <div class="item">
+                        <i class="fork icon"></i>
+                        <div class="content">version control</div>
+                    </div>
+                    <div class="item">
+                        <i class="database icon"></i>
+                        <div class="content">safe data</div>
+                    </div>
+                    <div class="item">
+                        <i class="bar chart icon"></i>
+                        <div class="content">application performance metrics</div>
+                    </div>
+                    <div class="item">
+                        <i class="server icon"></i>
+                        <div class="content">automated, repeatable, cloud-based deployments</div>
+                    </div>
+                    <div class="item">
+                        <i class="battery high icon"></i>
+                        <div class="content">backup and restore procedures</div>
+                    </div>
+                </div><!-- .list -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ui vertical stripe quote segment">
+    <div class="ui equal width stackable internally celled grid">
+        <div class="middle aligned row">
+            <div class="left aligned column">
+                <h1>We love legacy code</h1>   
+                <p>
+                We bring new life to old software, making sure all the existing functionality stays in place, easing the process of adding new functionality and elliminating bugs. After conducting an audit, we deliver you a detailed insight of your current situation, with clear recommendations on what can be improved, and recommendations of steps to be taken.
+                </p>
+                <p>
+                After having successfully delivered several large-scale products on tight timeframes, we can help you with targeted advice and hands-on help on product creation, development, and maintenance, without any compromise to the quality.
+                </p>
+                <h2>How we approach a legacy product</h2>     
+                <p>
+                We embrace your project from the quality perspective. Not being biased by having written the code, we focus on making sure it's stable, highly performant, and really meeting your needs.
+                </p>
+                <ol>
+                    <li>First we discover your product by performing manual testing and documenting it thoroughly.</li>
+                    <li>Then we analyse the packaging and shipping part.</li>
+                    <li>Next step is to automate the testing process, so that you can ensure new functionality is not breaking existing one.</li>
+                    <li>After that, we simplify and automate delivery. Continuously knowing you're meeting your goals is our main concern.</li>
+                </ol>
+            </div>
+            <div class="center aligned column">
+                <a class="ui red huge button" href="/contact" role="button">
+                    <i class="ui download icon"></i>
+                    Get a free evaluation
+                 </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ui vertical stripe quote segment">
+<div class="ui stackable centered two cards">
+
+{% for service in site.company.services %}
+  <div class="card">
+    <div class="content">
+        {% if service.icon is not null %}
+        <div class="right floated meta label">
+            <i class="{{ service.icon }} big icon"></i>
+        </div>
+        {% endif %}
+
+        <h2 class="heading">{{ service.title }}</h2>
+        <p class="description">{{ service.description }}</p>
+    </div>
+  </div>
+{% endfor %}
+</div>
+</div>
