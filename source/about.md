@@ -1,7 +1,7 @@
 ---
 title: About
 author: Georgiana
-layout: onecolumn
+layout: basic
 html_id: page-about
 menu_active: about
 use:
@@ -9,62 +9,59 @@ use:
 
 ---
 
-# We love legacy code
-
-We bring new life to old software, making sure all the existing functionality stays in place, easing the process of adding new functionality and elliminating bugs. After conducting an audit, we deliver you a detailed insight of your current situation, with clear recommendations on what can be improved, and recommendations of steps to be taken.
-
-After having successfully delivered several large-scale products on tight timeframes, we can help you with targeted advice and hands-on help on product creation, development, and maintenance, without any compromise to the quality.
-
-# Our Process
-
-We embrace your project from the quality perspective. Not being biased by having written the code, we focus on making sure it's stable, highly performant, and really meeting your needs.
-
-* First, we discover it by performing manual testing and documenting it thoroughly.
-* Then we analyse the packaging and shipping part.
-* Next step is to automate the testing process, so that you can ensure new functionality is not breaking existing one.
-* After that, we simplify and automate delivery. Continuously knowing you're meeting your goals is our main concern.
-
-<div class="container">
-  <div class="row justify-content-md-center">
-    <div class="col col-lg-8 offset-lg-1">
-      <div class="w-100 mb-4 pb-4 pl-4 pr-4">
-          <a class="btn btn-block btn-lg btn-danger" href="/contact" role="button">Talk to us</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-{% for geek in data.geeks %}
-<div class="media geeks w-100 mb-2">
-  <div class="media-left media-middle">
-    <img class="media-object img-rounded" src="{{ site.url }}/avatars/{{ geek.avatar }}" />
-  </div>
-  <div class="media-body ml-4">
-    <h2 class="media-heading">
-      <a href="{{ geek.url }}">
-      {{ geek.name }} <small>{{ geek.position }}</small>
-      </a>
-    </h2>
-    {% if geek.linkedin %}
-    <a href="{{ geek.linkedin }}"><i class="geek-icon ion-social-linkedin-outline"></i></a>
-    {% endif %}
-    {% if geek.twitter %}
-    <a href="{{ geek.twitter }}"><i class="geek-icon ion-social-twitter-outline"></i></a>
-    {% endif %}
-    {% if geek.facebook %}
-    <a href="{{ geek.facebook }}"><i class="geek-icon ion-social-facebook-outline"></i></a>
-    {% endif %}
-    {% if geek.skype %}
-    <a href="{{ geek.skype }}"><i class="geek-icon ion-social-skype-outline"></i></a>
-    {% endif %}
-    
-    {% if geek.tags | length %}
+<div class="ui vertical stripe text segment">
+    <h1>Helping companies since 2011</h1>
     <p>
-    {% for tag in geek.tags %}
-    <div><i class="ion-ios-pricetags-outline"></i>{{ tag }}</div>
-    {% endfor %}
+    During summer 2011 our founder, Georgiana Gligor, decided to return from rainy Amsterdam to sunny Alba Iulia.
     </p>
-    {% endif %}
-  </div>
+    <p>
+    We love open-source, so the products we create are always stable, high-performing, and with a short time-to-market.
+    </p>
+    <p>
+    Our small, well-glued, agile team, is always eager to discover the next challenge.
+    </p>
+    <h2>Organisers of the first Romanian conference dedicated to PHP</h2>
+    <p>
+    It's very important to us to give back to the community, so we bring the best European speakers in Cluj-Napoca 
+    <a href="https://romaniaphp.ro/">early October 2017 for a PHP geek fest</a>.
+    </p>
+    <div class="ui center aligned vertical stripe segment">
+        <a class="ui red huge button" href="/contact" role="button">
+            <i class="ui talk outline icon"></i>
+            Get in touch
+        </a>
+    </div>
+</div><!-- .segment -->
+
+<div class="ui centered vertical stripe segment">
+    <h2>Meet the tekkies</h2>
+    <div class="ui centered cards">
+    {% for geek in data.geeks %}
+      <div class="card">
+        <div class="content">
+            <a href="{{ geek.url }}">
+                <div class="right floated meta">{{ geek.position }}</div>
+                {{ geek.name }}
+            </a>
+        </div>
+        <div class="image">
+          <img class="media-object img-rounded" src="{{ site.url }}/avatars/{{ geek.avatar }}" />
+        </div>
+        <div class="extra centered content">
+          {% if geek.linkedin %}
+          <a href="{{ geek.linkedin }}"><i class="linkedin icon"></i></a>
+          {% endif %}
+          {% if geek.twitter %}
+          <a href="{{ geek.twitter }}"><i class="twitter icon"></i></a>
+          {% endif %}
+          {% if geek.facebook %}
+          <a href="{{ geek.facebook }}"><i class="facebook icon"></i></a>
+          {% endif %}
+          {% if geek.skype %}
+          <a href="{{ geek.skype }}"><i class="skype icon"></i></a>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+    </div><!-- .cards -->
 </div>
-{% endfor %}

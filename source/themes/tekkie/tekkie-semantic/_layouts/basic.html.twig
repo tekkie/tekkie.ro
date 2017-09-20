@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  {#{% include 'head_meta' only %}#}
+
+  <title>{% block title %}{{ page.title }}{% endblock %}
+{%- if page.layout == 'post' or page.menu_active == 'blog' -%}
+ &mdash; Tekkie Consulting Blog
+{%- else -%}
+ &mdash; {{ site.title }} &mdash; {{ site.subtitle }}
+{%- endif -%}
+</title>
+
+    <link rel="stylesheet" href="{{ site.url }}/themes/tekkie/tekkie-semantic/assets/css/semantic.min.css" />
+
+</head>
+
+<body{% if page.html_id %} id="{{ page.html_id }}"{% endif %}>
+
+{% include "navigation" %}
+
+<div class="ui main container">
+{%- block content_wrapper -%}
+    {% block content %}{% endblock %}
+{%- endblock -%}
+
+</div><!-- .mainContent -->
+
+{% include "footer" %}
+
+</body>
+</html>
