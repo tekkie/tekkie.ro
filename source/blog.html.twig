@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: onecolumn
 nav: blog
 title: Blog
 menu_active: blog
@@ -13,11 +13,10 @@ use:
 ---
 
 <section class="section-blog">
-  
-   
+   <div class="ui container">
 {% for post in page.pagination.items %}
 {% set postTitle = post.title %}
-    <div class="col-md-12 clear blog-posts margin-bottom">
+    <div class="ui items">
       {% if postTitle|length < post.title|length %}{% set postTitle = postTitle ~ "..." %}{% endif %}
 
           <div class="post-title">
@@ -43,7 +42,6 @@ use:
       </div>
 {% endfor %}
 
-
 {% if page.pagination.previous_page or page.pagination.next_page %}
   <div class="text-center">
       <nav class="article clearfix">
@@ -58,9 +56,13 @@ use:
       </nav>
   </div>
 {% endif %}
-
+   </div>
 </section>
-
+{% block contentSidebar %}
+<div class="card">
+    company CTA
+</div>
+{% endblock contentSidebar %}
 
 
 
