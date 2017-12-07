@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-    <link rel="shortcut icon" href="{{ site.url }}/themes/tekkie/tekkie-semantic/assets/images/favicon.ico">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" href="{{ site.url }}/themes/tekkie/tekkie-semantic/assets/images/favicon.ico">
 
-    <title>{% block title %}{{ page.title }}{% endblock %}
-        {%- if page.layout == 'post' or page.menu_active == 'blog' -%}
-            &mdash; Tekkie Consulting Blog
-        {%- else -%}
-            &mdash; {{ site.title }} &mdash; {{ site.subtitle }}
-        {%- endif -%}
-    </title>
+        <title>{% block title %}{{ page.title }}{% endblock %}
+            {%- if page.layout == 'post' or page.menu_active == 'blog' -%}
+                &mdash; Tekkie Consulting Blog
+            {%- else -%}
+                - {{ site.title }} {{ site.subtitle }}
+            {%- endif -%}
+        </title>
 
-    <link rel="stylesheet" href="{{ site.url }}/themes/tekkie/tekkie-semantic/assets/css/semantic.css" />
-    <link rel="stylesheet" href="{{ site.url }}/themes/tekkie/tekkie-semantic/assets/css/semantic-overrides.css" />
+        <link rel="stylesheet" href="{{ site.url }}/themes/tekkie/tekkie-semantic/assets/css/semantic.css" />
+        <link rel="stylesheet" href="{{ site.url }}/themes/tekkie/tekkie-semantic/assets/css/semantic-overrides.css" />
 
-</head>
+    </head>
 
-<body{% if page.html_id %} id="{{ page.html_id }}"{% endif %}>
+    <body{% if page.html_id %} id="{{ page.html_id }}"{% endif %}>
 
-{% include "navigation" with { 'style': 'ui large top fixed hidden menu', 'logo': 'logo-tekkie-consulting-small.jpg' } %}
+    {% include "navigation" with { 'style': 'ui  inverted stackable menu fixed main-nav', 'logo': 'logomark-tekkie-white.svg' } %}
+    <div class="pusher">
+        {%- block content_wrapper -%}
+            {% block content %}{% endblock %}
+        {%- endblock -%}
 
-<div class="pusher">
-    {%- block content_wrapper -%}
-        {% block content %}{% endblock %}
-    {%- endblock -%}
+    </div><!-- .mainContent -->
 
-</div><!-- .mainContent -->
+    {% include "footer" %}
 
-{% include "footer" %}
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ site.url }}/themes/tekkie/tekkie-semantic/assets/css/semantic.js"></script>
+    <script type="text/javascript" src="{{ site.url }}/themes/tekkie/tekkie-semantic/assets/js/typed.min.js"></script>
+    <script type="text/javascript" src="{{ site.url }}/themes/tekkie/tekkie-semantic/assets/js/particles.min.js"></script>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
-<script type="text/javascript">
-$(document)
-    .ready(function() {
+    <script type="text/javascript" src="{{ site.url }}/themes/tekkie/tekkie-semantic/assets/js/app.js"></script>
+    <script type="text/javascript">
+    $(document)
+        .ready(function() {
 
-        // fix menu when passed
-        $('.masthead')
-            .visibility({
-                once: false,
-                onBottomPassed: function() {
-                    $('.fixed.menu').transition('fade in');
-                },
-                onBottomPassedReverse: function() {
-                    $('.fixed.menu').transition('fade out');
-                }
-            })
-        ;
+            // fix menu when passed
+            $('.masthead')
+                .visibility({
+                    once: false,
+                    onBottomPassed: function() {
+                        $('.fixed.menu').transition('fade in');
+                    },
+                    onBottomPassedReverse: function() {
+                        $('.fixed.menu').transition('fade out');
+                    }
+                })
+            ;
 
-        // create sidebar and attach to menu open
-        $('.ui.sidebar')
-            .sidebar('attach events', '.toc.item')
-        ;
+            // create sidebar and attach to menu open
+            $('.ui.sidebar')
+                .sidebar('attach events', '.toc.item')
+            ;
 
-    })
-;
-</script>
-</body>
+        })
+    ;
+    </script>
+    </body>
 </html>

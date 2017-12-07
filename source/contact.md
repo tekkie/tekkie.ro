@@ -3,7 +3,7 @@ title: Contact
 subtitle: Here is how you can get in touch with us.
 author: Georgiana
 menu_active: contact
-layout: default-with-map
+layout: basic
 ---
 
 <div class="w-100 text-center mt-4 pt-4">

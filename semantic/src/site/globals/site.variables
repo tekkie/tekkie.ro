@@ -1,3 +1,22 @@
 /*******************************
      User Global Variables
 *******************************/
+
+/*-------------------
+      Base Sizes
+--------------------*/
+
+/* This is the single variable that controls them all */
+@emSize   : 16px;
+
+/* The size of page text  */
+@fontSize : 16px;
+
+/*-------------------
+       Links
+--------------------*/
+
+@linkColor           : #dd0000;
+@linkUnderline       : none;
+@linkHoverColor      : darken(saturate(@linkColor, 20), 15, relative);
+@linkHoverUnderline  : @linkUnderline;

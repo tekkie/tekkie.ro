@@ -16,29 +16,23 @@ use:
    <div class="ui container">
 {% for post in page.pagination.items %}
 {% set postTitle = post.title %}
-    <div class="ui items">
+    <div class="ui items list-post-container">
       {% if postTitle|length < post.title|length %}{% set postTitle = postTitle ~ "..." %}{% endif %}
-
-          <div class="post-title">
-            <h3 class="article-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ postTitle }}</a></h3>
-          </div>
-
+        <h3 class="ui header"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ postTitle }}</a></h3>
           {%- if post.meta.tags -%}
             {% for tag in post.meta.tags %}
-              <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}" class="btn btn-default btn-xs"><i class="ion-ios-pricetags-outline" ></i>{{ tag }}</a>
+              <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}" class="ui tag label">{{ tag }}</a>
             {% endfor %}
 
             {% if post.excerpt %}
-              <div class="post-excerpt">
-                <p class="fp-excerpt">{{ post.excerpt[0:200] }}</p>
-              </div>
+                <div class="description">
+                    <p>{{ post.excerpt[0:200] }}</p>
+                </div>
             {% else %}
-              <p class="fp-content">{{ post.blocks.content|raw[0:500] }}</p>
+            <p class="fp-content">{{ post.blocks.content|raw[0:500] }}</p>
             {% endif %}
             <a class="btn btn-primary" href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">Read more</a>
-
-
-      {%- endif -%}
+          {%- endif -%}
       </div>
 {% endfor %}
 
@@ -60,7 +54,7 @@ use:
 </section>
 {% block contentSidebar %}
 <div class="card">
-    company CTA
+    {% include 'sidebar_cta.html.twig' %}
 </div>
 {% endblock contentSidebar %}
 

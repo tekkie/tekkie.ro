@@ -1,10 +1,10 @@
 
 <header>
-  <div class="{{ style }}">
+  <div class="{{ style }} inverted main-nav" {% if page.title == 'Home'  %} {{ 'style="background-color: transparent;"' }}"{% endif %}>
     <div class="ui container">
-      <a href="{{ site.url }}" class="header item">
+      <a href="{{ site.url }}" class="header item logo-brand">
         <img class="logo" src="{{ site.url }}/{{ theme_path("assets/images/" ~ logo) }}" />
-        Tekkie Consulting
+        <span class="logo-brand-text">Tekkie Consulting</span>
       </a>
 
       <div class="right menu">
@@ -24,5 +24,4 @@
 
     </div>
   </div>
-
 </header>

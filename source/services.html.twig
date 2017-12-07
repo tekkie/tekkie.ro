@@ -6,47 +6,6 @@ layout: basic
 menu_active: services
 html_id: page-services
 ---
-{% include "navigation" with { 'style': 'ui  inverted menu ', 'logo': 'logomark-tekkie-white.svg' } %}
-<!--<div class="ui vertical stripe segment">-->
-    <!--<div class="ui equal width stackable internally celled grid">-->
-        <!--<div class="middle aligned row">-->
-            <!--<div class="center aligned column">-->
-                <!--<a class="ui red huge button" href="/contact" role="button">-->
-                    <!--<i class="ui checked calendar icon"></i>-->
-                    <!--Test-drive it!-->
-                <!--</a>-->
-            <!--</div>-->
-            <!--<div class="left aligned column">-->
-                <!--<h1>We use an integrated approach on new projects</h1>-->
-                <!--<p>-->
-                <!--Over time we developed an integrated approach that we use on each new project. We could never live without:-->
-                <!--</p>-->
-                <!--<div class="ui list">-->
-                    <!--<div class="item">-->
-                        <!--<i class="fork icon"></i>-->
-                        <!--<div class="content">version control</div>-->
-                    <!--</div>-->
-                    <!--<div class="item">-->
-                        <!--<i class="database icon"></i>-->
-                        <!--<div class="content">safe data</div>-->
-                    <!--</div>-->
-                    <!--<div class="item">-->
-                        <!--<i class="bar chart icon"></i>-->
-                        <!--<div class="content">application performance metrics</div>-->
-                    <!--</div>-->
-                    <!--<div class="item">-->
-                        <!--<i class="server icon"></i>-->
-                        <!--<div class="content">automated, repeatable, cloud-based deployments</div>-->
-                    <!--</div>-->
-                    <!--<div class="item">-->
-                        <!--<i class="battery high icon"></i>-->
-                        <!--<div class="content">backup and restore procedures</div>-->
-                    <!--</div>-->
-                <!--</div>&lt;!&ndash; .list &ndash;&gt;-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
 
 <div class="ui vertical stripe quote segment">
     <div class="ui equal width stackable internally celled grid">
@@ -81,21 +40,23 @@ html_id: page-services
 </div>
 
 <div class="ui vertical stripe quote segment">
-<div class="ui stackable centered two cards">
+    <div class="ui container">
+    <div class="ui stackable centered two cards">
 
-{% for service in site.company.services %}
-  <div class="card">
-    <div class="content">
-        {% if service.icon is not null %}
-        <div class="right floated meta label">
-            <i class="{{ service.icon }} big icon"></i>
+    {% for service in site.company.services %}
+      <div class="card">
+        <div class="content">
+            {% if service.icon is not null %}
+            <div class="right floated meta label">
+                <i class="{{ service.icon }} big icon"></i>
+            </div>
+            {% endif %}
+
+            <h2 class="heading">{{ service.title }}</h2>
+            <p class="description">{{ service.description }}</p>
         </div>
-        {% endif %}
-
-        <h2 class="heading">{{ service.title }}</h2>
-        <p class="description">{{ service.description }}</p>
+      </div>
+    {% endfor %}
     </div>
-  </div>
-{% endfor %}
-</div>
+    </div>
 </div>

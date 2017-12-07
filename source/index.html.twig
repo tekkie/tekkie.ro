@@ -19,81 +19,163 @@ use:
 {% endblock %}
 
 {% block content %}
+    <section id="intro-section" class="section particles-js">
+        <div class="floating-container">
+            <h1 class="ui inverted header intro-company-title">
+              Tekkie Consulting
+            </h1>
+            <h2 class="ui header inverted typed intro-company-subtitle">
+            Building web apps with <span class="colored-word">passion!</span>
+            </h2>
+            <a href="{{ site.url }}/contact" class="huge primary ui button intro-cta-button">
+                Contact
+            </a>
+            <a href="{{ site.url }}/services" class="huge inverted ui button intro-cta-button">
+                Learn more
+            </a>
+        </div>
+    </section>
+    <section id="about-section" class="section">
+        <div class="ui container center aligned">
+            <h2 class="ui header intro-company-title">
+                Who we are
+            </h2>
+            <p>{{ site.company.summary }}</p>
+        </div>
+    </section>
+    <section id="preview-services" class="section">
+        <div class="ui container">
+            <h2 class="ui header intro-company-title center aligned">
+                Services
+            </h2>
+            <div class="ui hidden divider"></div>
+            <div class="ui four column stackable grid">
+                <div class="column">
+                    <h3 class="fp-icon-header ui header center aligned icon header">
+                        <i class="fp-services-icon settings icon"></i>
+                        <div class="content">
+                            Business Analysis
+                        </div>
+                    </h3>
+                </div>
+                <div class="column">
+                    <h3 class="fp-icon-header ui header center aligned icon header">
+                        <i class="fp-services-icon clone icon"></i>
+                        <div class="content">
+                            Architecture
+                        </div>
+                    </h3>
+                </div>
+                <div class="column">
+                    <h3 class="fp-icon-header ui header center aligned icon header">
+                        <i class="fp-services-icon unordered list icon"></i>
+                        <div class="content">
+                            Prototyping
+                        </div>
+                    </h3>
+                </div>
+                <div class="column">
+                    <h3 class="fp-icon-header ui header center aligned icon header">
+                        <i class="fp-services-icon terminal icon"></i>
+                        <div class="content">
+                            Development
+                        </div>
+                    </h3>
+                </div>
+                <div class="column">
+                    <h3 class="fp-icon-header ui header center aligned icon header">
+                        <i class="fp-services-icon checkmark box icon"></i>
+                        <div class="content">
+                            Testing
+                        </div>
+                    </h3>
+                </div>
+                <div class="column">
+                    <h3 class="fp-icon-header ui header center aligned icon header">
+                        <i class="fp-services-icon configure icon"></i>
+                        <div class="content">
+                            Maintenance
+                        </div>
+                    </h3>
+                </div>
+                <div class="column">
+                    <h3 class="fp-icon-header ui header center aligned icon header">
+                        <i class="fp-services-icon puzzle icon"></i>
+                        <div class="content">
+                            Management
+                        </div>
+                    </h3>
+                </div>
+                <div class="column">
+                    <h3 class="fp-icon-header ui header center aligned icon header">
+                        <i class="fp-services-icon users icon"></i>
+                        <div class="content">
+                            Consulting
+                        </div>
+                    </h3>
+                </div>
+            </div>
+            <div class="ui center aligned basic segment">
+                <a class="ui primary huge button" href="{{ site.url }}/services">Learn more</a>
+            </div>
+        </div>
+    </section>
+    {#<section id="products-section" class="section">#}
+            {#<div class="ui center aligned basic segment">#}
+                {#<h2 class="ui header intro-company-title center aligned">#}
+                    {#And we've been busy#}
+                {#</h2>#}
+            {#</div>#}
+            {#<div class="ui two column center aligned grid stackable">#}
+                {#<div class="column">#}
+                    {#Johnny#}
+                {#</div>#}
+                {#<div class="column">#}
+                    {#Ceva#}
+                {#</div>#}
+            {#</div>#}
+    {#</section>#}
+    <section id="fp-blog-section" class="section">
+        <div class="ui text container">
+          <h2 class="ui horizontal header intro-company-title">
+              The latest news from our blog. Happy reading
+          </h2>
+          {% for post in page.pagination.items %}
+            {% set postTitle = post.title %}
+            {% if postTitle|length > site.posts.title.shorten %}{% set postTitle = postTitle[:site.posts.title.shorten] ~ "..." %}{% endif %}
+            <h3 class="ui header">
+                <a class="blog-title-link" href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">
+                    {{ post.title }}
+                </a>
+            </h3>
 
-<div class="ui inverted vertical masthead center aligned segment">
-{% include "navigation" with { 'style': 'ui large secondary inverted pointing menu', 'logo': 'logomark-tekkie-white.svg' } %}
+              <p>
+                {% if post.excerpt %}
+                  {{ post.excerpt }}
+                {% else %}
+                  {{ post.blocks.content|raw[0:100] }}
+                {% endif %}
+              </p>
 
-  <div class="ui text container">
-    <h1 class="ui inverted header">
-      Tekkie Consulting
-    </h1>
-    <h2>{{ site.company.summary }}</h2>
-    <a class="ui huge primary button" href="{{ site.url }}/services">
-      Get Started <i class="right arrow icon"></i>
-    </a>
-  </div>
-
-</div>
-
-  {#<div class="row services-section">#}
-    {#<div class="section-intro">#}
-      {#<h2 class="section-intro-title">What we do</h2>#}
-      {#<div class="section-summary"><p>Tekkie Consulting offers the following high quality services.</p></div>#}
-    {#</div>#}
-    {##}
-    {#<div class="container">#}
-      {#<div class="row">#}
-      {#{% for service in site.company.services %}#}
-          {#<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-6 margin-bottom text=center">#}
-            {#<h4 class="text-center service-text {{service.title}}">{{ service.title }}</h4>#}
-          {#</div>#}
-      {#{% endfor %}#}
-      {#</div>#}
-    {#</div>#}
-  {#</div>#}
-
-  <div class="ui vertical stripe segment" id="latest-from-blog">
-    <div class="ui text container">
-      <h4 class="ui horizontal header divider">
-          The latest news from our blog. Happy reading.
-      </h4>
-
-      {% for post in page.pagination.items %}
-        {% set postTitle = post.title %}
-        {% if postTitle|length > site.posts.title.shorten %}{% set postTitle = postTitle[:site.posts.title.shorten] ~ "..." %}{% endif %}
-      <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">
-        <h3 class="ui header">
-            {{ post.title }}
-        </h3>
-      </a>
-
-          <p>
-            {% if post.excerpt %}
-              {{ post.excerpt }}
-            {% else %}
-              {{ post.blocks.content|raw[0:100] }}
+            {% if post.meta.tags %}
+              <div class="card-footer m-0 p-0 text-center">
+                <p class="card-text">
+                    {% for tag in post.meta.tags %}
+                      <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}" class="ui tag label blog-title-link">
+                        {{ tag }}
+                      </a>
+                    {% endfor %}
+                  {#<small class="text-muted">#}
+                      {#{% set daysAgo = date(post.date|date('Y/m/d')).diff(date('now'|date('Y/m/d'))).days %}#}
+                      {#{% if 0 == daysAgo %}Today{% elseif 1 == daysAgo %}Yesterday{% else %}{{ daysAgo }} days ago{% endif %}#}
+                  {#</small>#}
+                </p>
+              </div>
             {% endif %}
-          </p>
 
-        {% if post.meta.tags %}
-          <div class="card-footer m-0 p-0 text-center">
-            <p class="card-text">
-                {% for tag in post.meta.tags %}
-                  <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}" class="ui tag label">
-                    {{ tag }}
-                  </a>
-                {% endfor %}
-              {#<small class="text-muted">#}
-                  {#{% set daysAgo = date(post.date|date('Y/m/d')).diff(date('now'|date('Y/m/d'))).days %}#}
-                  {#{% if 0 == daysAgo %}Today{% elseif 1 == daysAgo %}Yesterday{% else %}{{ daysAgo }} days ago{% endif %}#}
-              {#</small>#}
-            </p>
-          </div>
-        {% endif %}
-
-      <div class="ui hidden divider"></div>
-    {% endfor %}
-    </div>
-  </div>
+          {#<div class="ui hidden divider"></div>#}
+        {% endfor %}
+        </div>
+    </section>
 
 {% endblock %}
