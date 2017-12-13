@@ -1,0 +1,96 @@
+.logo-brand-text {
+    margin-left: 10px;
+}
+
+.section {
+    padding: 75px 0 !important;
+}
+
+.gradient-bg {
+    background: #7db9e8; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #2b5876 0%, #4e4376 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #2b5876 0%,#4e4376 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #2b5876 0%,#4e4376 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+#intro-section {
+    background: #7db9e8; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #2b5876 0%, #4e4376 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #2b5876 0%,#4e4376 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #2b5876 0%,#4e4376 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color: white;
+    min-height: 600px;
+    text-align: center;
+    position: relative;
+}
+
+.colored-word {
+    color: #dd0000;
+}
+
+.intro-company-title {
+    text-transform: uppercase !important;
+    letter-spacing: 3px;
+}
+
+.intro-company-subtitle {
+    font-weight: normal !important;
+    letter-spacing: 3px;
+}
+
+.floating-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ui.primary.button {
+    background-color: #dd0000 !important;
+}
+
+#about-section {
+    background-color: #f9f9f9;
+}
+
+.blog-title-link {
+    transition: all .2s linear;
+    color: black;
+}
+
+.blog-title-link:hover {
+    color: #dd0000 !important;
+}
+
+#fp-blog-section {
+    background-color: #f9f9f9;
+}
+
+.fp-services-icon {
+    font-size: 1.5em !important;
+    transition: all .2s linear;
+}
+.fp-icon-header {
+    position: relative;
+    transition: .2s all linear;
+    padding: 10px 0 !important;
+}
+
+.fp-icon-header:hover .fp-services-icon {
+    color: #dd0000;
+}
+
+.fp-icon-header:hover .content {
+    color: #dd0000;
+}
+
+.pushed {
+    padding-top: 70px;
+}
+
+.logo-brand {
+    padding-left: 0 !important;
+}
