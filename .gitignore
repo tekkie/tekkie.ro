@@ -15,6 +15,7 @@ config.codekit*
 # IDE related
 .idea/
 
+yarn.lock
 
 node_modules/
 source/themes/tekkie/tekkie-semantic/assets/
