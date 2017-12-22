@@ -10,9 +10,10 @@ tags:
   - manual QA
   - QA automation
   - PHP
-position: QA developer
+position: Automation Wizard
 facebook: https://www.facebook.com/mihaialexandru.sicoe
 skype: skype:mitza_alex?chat
+email: mihai@tekkie.us
 html_id: page-geek
 ---
 Our API crafter.

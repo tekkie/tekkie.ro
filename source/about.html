@@ -54,6 +54,9 @@ use:
           <img src="//via.placeholder.com/250?text=mistery+tekkie" data-src="{{ site.url }}/avatars/{{ geek.avatar }}" />
         </div>
         <div class="extra centered content">
+          {% if geek.email %}
+          <a href="mailto:{{ geek.email }}"><i class="mail outline icon"></i></a>
+          {% endif %}
           {% if geek.linkedin %}
           <a href="{{ geek.linkedin }}"><i class="linkedin icon"></i></a>
           {% endif %}
@@ -61,7 +64,7 @@ use:
           <a href="{{ geek.twitter }}"><i class="twitter icon"></i></a>
           {% endif %}
           {% if geek.facebook %}
-          <a href="{{ geek.facebook }}"><i class="facebook icon"></i></a>
+          <a href="{{ geek.facebook }}"><i class="facebook f icon"></i></a>
           {% endif %}
           {% if geek.skype %}
           <a href="{{ geek.skype }}"><i class="skype icon"></i></a>
