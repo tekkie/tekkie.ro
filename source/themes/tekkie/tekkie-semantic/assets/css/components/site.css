@@ -201,3 +201,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
          Site Overrides
 *******************************/
 
+.ui.main {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}

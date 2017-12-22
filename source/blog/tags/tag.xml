@@ -5,8 +5,8 @@ generator: [posts_tag_index]
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title><![CDATA[{{ site.title }}]]></title>
-    <link href="{{ site.url }}{{ page.url }}" rel="self"/>
-    <link href="{{ site.url }}/"/>
+    <link href="{{ site.meta.fb.url }}{{ page.url }}" rel="self"/>
+    <link href="{{ site.meta.fb.url }}/"/>
     <updated>{{ site.calculated_date | date('c') }}</updated>
     <id>{{ site.url }}/</id>
     {% if site.author or site.email %}
@@ -19,9 +19,9 @@ generator: [posts_tag_index]
     {% for post in page.tag_posts|slice(0, 10) %}
         <entry>
             <title type="html"><![CDATA[{{ post.title }}]]></title>
-            <link href="{{ site.url }}{{ post.url }}"/>
+            <link href="{{ site.meta.fb.url }}{{ post.url }}"/>
             <updated>{{ post.date|date('c') }}</updated>
-            <id>{{ site.url }}{{ post.url }}</id>
+            <id>{{ site.meta.fb.url }}{{ post.url }}</id>
             <content type="html"><![CDATA[{{ post.blocks.content|raw }}]]></content>
         </entry>
     {% endfor %}
